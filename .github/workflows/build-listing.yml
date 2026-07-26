@@ -1,0 +1,137 @@
+# sources.json に並べたリポジトリの GitHub Release を全部読み、
+# VPM リポジトリの index.json を組み立てて GitHub Pages で公開する。
+#
+# 版ごとのメタデータは各リリース zip の中の package.json をそのまま使う。
+# ここで手書きするものが無いので、リリースと一覧がズレない。
+#
+# パッケージを増やすときは sources.json の repos に1行足すだけでよい。
+name: Build VPM Listing
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  # パッケージ側でリリースしても、このリポジトリのワークフローは自動では動かない
+  # （別リポジトリのイベントを受けるには PAT が要る）。取りこぼしを定期実行で拾う。
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: index.json を組み立てる
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+        run: |
+          set -euo pipefail
+          mkdir -p _site work
+
+          LISTING_URL="https://$(echo "$OWNER" | tr '[:upper:]' '[:lower:]').github.io/${REPO}/index.json"
+          echo "listing url: $LISTING_URL"
+
+          echo '{}' > work/packages.json
+
+          for SRC in $(jq -r '.repos[]' sources.json); do
+            echo "::group::$SRC"
+            echo '{}' > work/versions.json
+            PKG_NAME=""
+
+            for TAG in $(gh release list -R "$SRC" --limit 100 --json tagName -q '.[].tagName'); do
+              rm -f work/*.zip work/pkg.json
+              if ! gh release download "$TAG" -R "$SRC" --dir work --pattern '*.zip'; then
+                echo "  $TAG: zip が無いので飛ばします"
+                continue
+              fi
+              ZIP=$(ls work/*.zip 2>/dev/null | head -n1 || true)
+              [ -z "$ZIP" ] && continue
+
+              if ! unzip -p "$ZIP" package.json > work/pkg.json 2>/dev/null; then
+                echo "  $TAG: zip の中に package.json がありません。飛ばします"
+                continue
+              fi
+
+              PKG_NAME=$(jq -r .name work/pkg.json)
+              VERSION=$(jq -r .version work/pkg.json)
+              SHA=$(sha256sum "$ZIP" | cut -d' ' -f1)
+              URL="https://github.com/${SRC}/releases/download/${TAG}/$(basename "$ZIP")"
+              echo "  $PKG_NAME $VERSION"
+
+              jq --arg url "$URL" --arg sha "$SHA" --arg listing "$LISTING_URL" \
+                 '. + {url: $url, zipSHA256: $sha, repo: $listing}' work/pkg.json > work/entry.json
+
+              jq --arg v "$VERSION" --slurpfile e work/entry.json \
+                 '. + {($v): $e[0]}' work/versions.json > work/versions.tmp
+              mv work/versions.tmp work/versions.json
+            done
+
+            if [ -z "$PKG_NAME" ]; then
+              echo "::warning::$SRC には取り込めるリリースがありませんでした"
+              echo "::endgroup::"
+              continue
+            fi
+
+            jq --arg n "$PKG_NAME" --slurpfile v work/versions.json \
+               '. + {($n): {versions: $v[0]}}' work/packages.json > work/packages.tmp
+            mv work/packages.tmp work/packages.json
+            echo "::endgroup::"
+          done
+
+          jq -n \
+            --arg name   "$(jq -r .listing.name   sources.json)" \
+            --arg id     "$(jq -r .listing.id     sources.json)" \
+            --arg author "$(jq -r .listing.author sources.json)" \
+            --arg url    "$LISTING_URL" \
+            --slurpfile packages work/packages.json \
+            '{name: $name, id: $id, author: $author, url: $url, packages: $packages[0]}' \
+            > _site/index.json
+
+          echo "--- 生成した index.json ---"
+          cat _site/index.json
+
+      - name: 案内ページを作る
+        env:
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+        run: |
+          LISTING_URL="https://$(echo "$OWNER" | tr '[:upper:]' '[:lower:]').github.io/${REPO}/index.json"
+          {
+            echo '<!doctype html><meta charset="utf-8">'
+            echo '<title>HoriCraft VPM Listing</title>'
+            echo '<style>body{font-family:sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem;line-height:1.7}'
+            echo 'code{background:#eee;padding:.15rem .4rem;border-radius:.2rem}</style>'
+            echo '<h1>HoriCraft VPM Listing</h1>'
+            echo '<p>VCC の Settings → Packages → Add Repository に、次の URL を貼り付けてください。</p>'
+            echo "<p><code>${LISTING_URL}</code></p>"
+            echo '<h2>収録パッケージ</h2><ul>'
+            jq -r '.packages | to_entries[] | .value.versions | to_entries | max_by(.key) | .value
+                   | "<li><b>\(.displayName)</b> \(.version) — \(.description // "")</li>"' _site/index.json
+            echo '</ul>'
+          } > _site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

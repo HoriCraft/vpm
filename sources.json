@@ -1,0 +1,10 @@
+{
+  "listing": {
+    "name": "HoriCraft VPM Listing",
+    "id": "com.horicraft.vpm",
+    "author": "HoriCraft"
+  },
+  "repos": [
+    "HoriCraft/texslim"
+  ]
+}
