@@ -108,19 +108,73 @@ jobs:
           REPO: ${{ github.event.repository.name }}
         run: |
           LISTING_URL="https://$(echo "$OWNER" | tr '[:upper:]' '[:lower:]').github.io/${REPO}/index.json"
-          {
-            echo '<!doctype html><meta charset="utf-8">'
-            echo '<title>HoriCraft VPM Listing</title>'
-            echo '<style>body{font-family:sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem;line-height:1.7}'
-            echo 'code{background:#eee;padding:.15rem .4rem;border-radius:.2rem}</style>'
-            echo '<h1>HoriCraft VPM Listing</h1>'
-            echo '<p>VCC の Settings → Packages → Add Repository に、次の URL を貼り付けてください。</p>'
-            echo "<p><code>${LISTING_URL}</code></p>"
-            echo '<h2>収録パッケージ</h2><ul>'
-            jq -r '.packages | to_entries[] | .value.versions | to_entries | max_by(.key) | .value
-                   | "<li><b>\(.displayName)</b> \(.version) — \(.description // "")</li>"' _site/index.json
-            echo '</ul>'
-          } > _site/index.html
+          # vcc:// スキームでワンクリック登録させる。URL はクエリ値なのでエンコードする。
+          ENCODED=$(printf '%s' "$LISTING_URL" | jq -sRr @uri)
+          VCC_LINK="vcc://vpm/addRepo?url=${ENCODED}"
+
+          cat > _site/index.html <<HTML
+          <!doctype html>
+          <html lang="ja"><head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>HoriCraft VPM Listing</title>
+          <style>
+            *{box-sizing:border-box;margin:0;padding:0}
+            body{font-family:system-ui,"Segoe UI","Yu Gothic UI",sans-serif;
+                 background:#f6f8fb;color:#1e2330;line-height:1.75;
+                 max-width:46rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+            h1{font-size:1.9rem;font-weight:800;letter-spacing:-.01em}
+            .lead{color:#5a677f;margin:.5rem 0 2rem}
+            .cta{background:#fff;border:1px solid #e2e7f0;border-radius:14px;
+                 padding:1.75rem;margin-bottom:2rem;text-align:center}
+            .btn{display:inline-block;background:#2a6fe8;color:#fff;font-weight:800;
+                 font-size:1.15rem;padding:.85em 2.2em;border-radius:999px;
+                 text-decoration:none;box-shadow:0 4px 14px rgba(42,111,232,.35)}
+            .btn:hover{background:#1d5bc4}
+            .sub{font-size:.85rem;color:#7b8496;margin-top:1rem}
+            details{margin-top:1rem;font-size:.9rem;color:#5a677f}
+            code{background:#eef2f8;border:1px solid #dbe3ef;border-radius:5px;
+                 padding:.15rem .45rem;font-size:.9em;word-break:break-all}
+            .pkg{background:#fff;border:1px solid #e2e7f0;border-radius:12px;
+                 padding:1.1rem 1.3rem;margin-bottom:.75rem}
+            .pkg b{font-size:1.05rem}
+            .pkg .ver{color:#2a6fe8;font-weight:700;margin-left:.4rem}
+            .pkg p{color:#5a677f;font-size:.9rem;margin-top:.35rem}
+            h2{font-size:1.1rem;margin:2rem 0 .8rem}
+            footer{margin-top:3rem;color:#8a93a8;font-size:.85rem;text-align:center}
+            a{color:#2a6fe8}
+          </style></head><body>
+
+          <h1>HoriCraft VPM Listing</h1>
+          <p class="lead">VCC（VRChat Creator Companion）から HoriCraft のツールを導入するためのページです。</p>
+
+          <div class="cta">
+            <a class="btn" href="${VCC_LINK}">VCC に追加する</a>
+            <p class="sub">ボタンを押すと VCC が起動し、確認画面が出ます。<br>
+            そのまま追加すれば、Manage Project の一覧にツールが並びます。</p>
+            <details>
+              <summary>ボタンが効かないとき（手動で追加する）</summary>
+              <p style="margin-top:.6rem">VCC の <b>Settings → Packages → Add Repository</b> に、次の URL を貼り付けてください。</p>
+              <p><code>${LISTING_URL}</code></p>
+            </details>
+          </div>
+
+          <h2>収録パッケージ</h2>
+          HTML
+
+          jq -r '.packages | to_entries[] | .value.versions | to_entries | max_by(.key) | .value
+                 | "<div class=\"pkg\"><b>\(.displayName)</b><span class=\"ver\">v\(.version)</span>"
+                 + "<p>\(.description // "")</p>"
+                 + (if .url then "<p><a href=\"\(.url)\">GitHub</a></p>" else "" end)
+                 + "</div>"' _site/index.json >> _site/index.html
+
+          cat >> _site/index.html <<'HTML'
+          <footer>製作: HoriCraft</footer>
+          </body></html>
+          HTML
+
+          echo "--- 生成した index.html ---"
+          head -20 _site/index.html
 
       - uses: actions/upload-pages-artifact@v3
         with:
