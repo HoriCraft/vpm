@@ -176,6 +176,12 @@ jobs:
           echo "--- 生成した index.html ---"
           head -20 _site/index.html
 
+      - name: Katachia のテスター案内を追加する
+        run: |
+          node scripts/verify-katachia.mjs
+          mkdir -p _site/katachia
+          cp site/katachia/* _site/katachia/
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
