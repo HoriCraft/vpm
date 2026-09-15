@@ -18,7 +18,7 @@ function loadPersonalKey(){
  }else if(result.state==='invalid'){
   $('key-hint').textContent='キー付きリンクを読み取れませんでした。DMのリンク全体から開き直すか、@SansanHoriへ再送を依頼してください。';
  }else{
-  $('key-hint').textContent='製品版のテスター用キーは個別DMでお渡しします。受け取ったキー付きリンクから開くと、このボタンでコピーできます。キーなしでも無料版を使えます。';
+  $('key-hint').textContent='製品版のテスター用キーは個別DMでお渡しします。受け取ったキー付きリンクから開くと、このボタンでコピーできます。beta.10の利用には有効な解除キーが必要です。';
  }
 }
 async function start(){
@@ -29,7 +29,7 @@ async function start(){
   if(!response.ok)throw Error('配布情報を読み込めませんでした。少し待って開き直してください。');
   validateListing(await response.json(),config);repositoryReady=true;
   for(const id of ['add-repo','copy-repo'])$(id).disabled=false;
-  $('connection').textContent='ベータ版はどなたでも追加できます。製品版のテストに参加する方は、個別DMのキーを登録してください。';
+  $('connection').textContent='リポジトリはどなたでも追加できます。beta.10の利用には、配布者から受け取った有効なキーを登録してください。';
  }catch(e){$('connection').textContent=e.message;$('connection').classList.add('error');}
 }
 start();

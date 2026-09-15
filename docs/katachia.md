@@ -7,7 +7,7 @@ Katachia uses a separate beta listing so the existing TexSlim repository and its
 - Public assets: `site/katachia/` (six files only)
 - Package assets: GitHub prereleases in this repository, tagged `katachia-v<VERSION>`
 
-The guide includes installation, trial tasks, optional hints and feedback instructions. Anyone can install the free edition from the common URL. Product tester keys are delivered separately by the owner; never put actual keys, private invitation messages, signing material or development history in this repository.
+The guide includes installation, trial tasks, optional hints and feedback instructions. Anyone can add the common VPM URL; beta.10 requires a valid product key to use the tool. Product tester keys are delivered separately by the owner; never put actual keys, private invitation messages, signing material or development history in this repository.
 
 The guide can read a key from the URL fragment supplied in a private message. It removes that fragment immediately and stores the key only in memory until the page is closed or reloaded. Fragments are not part of HTTP requests, but the complete link remains sensitive: anyone receiving it can copy that key. This does not provide identity verification or remote revocation. Unity validates the product key signature and expiry.
 
@@ -31,3 +31,11 @@ The first candidate is `0.2.0-beta.7`, 6,205,884 bytes, SHA256 `2f069c45b1fd70e7
 - Owner verified the same candidate update in Test Project, edition and earlier face/photo retention, and basic PNG/preview operations on Sio. GIF, arbitrary clips and a fresh install remain under review. Automated package checks are not Unity visual verification.
 - Known issues are listed on the guide: capture settings scroll resets, angle drag ordering, automatic full-body framing on mesh changes, and avatar-dependent built-in appearance quality.
 - The beta.7 listing entry, asset and repository identity remain unchanged. No signing-key rotation or free-edition policy change is included.
+
+## 2026-09-16 beta.10
+
+- Owner explicitly authorized implementation, regression checks and publication without another approval or waiting for owner interaction. No claim of Unity visual acceptance.
+- Source ced5ce6174ae2ee6170380f0f1c95f711df6fc12; 12752761 bytes; SHA256 3786df647db1c64ea0d71e4dd7d9dff1e67f10c1ff1144732ac03a2e8fc999dd.
+- Free edition ended; existing valid keys, data and .anim references remain. Bundled capture expression/pose presets retired.
+- Same repository identity and previous versions remain. Only new Photos~/Reports~ output locations; no old-file migration.
+- Remaining Unity checks are documented on the public guide and release notes.
