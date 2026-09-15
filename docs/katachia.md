@@ -23,3 +23,11 @@ The guide can read a key from the URL fragment supplied in a private message. It
 The daily Pages build runs static validation only. It does not make the existing TexSlim listing depend on a successful separate Katachia download on every run. The release download check above is required when publishing or changing a package.
 
 The first candidate is `0.2.0-beta.7`, 6,205,884 bytes, SHA256 `2f069c45b1fd70e7e76a1c7f61d80ac2f676570b4ad937859a639517536a629e`. Its guide changes do not rebuild the Unity package.
+
+## 2026-09-16 beta.9
+
+- The owner explicitly approved publishing beta.9 with the current known UI issues.
+- Package source: `947c7732c56d34c123330c9b88dc1df4e218b770`; immutable package: 12,744,980 bytes, SHA256 `22274eb47b31e96d3ccc8de66204a844071c1b1c95128b77e9e810bdc94bac88`.
+- Owner verified the same candidate update in Test Project, edition and earlier face/photo retention, and basic PNG/preview operations on Sio. GIF, arbitrary clips and a fresh install remain under review. Automated package checks are not Unity visual verification.
+- Known issues are listed on the guide: capture settings scroll resets, angle drag ordering, automatic full-body framing on mesh changes, and avatar-dependent built-in appearance quality.
+- The beta.7 listing entry, asset and repository identity remain unchanged. No signing-key rotation or free-edition policy change is included.
