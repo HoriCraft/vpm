@@ -7,7 +7,7 @@ Katachia uses a separate beta listing so the existing TexSlim repository and its
 - Public assets: `site/katachia/` (six files only)
 - Package assets: GitHub prereleases in this repository, tagged `katachia-v<VERSION>`
 
-The guide includes installation, trial tasks, optional hints and feedback instructions. Anyone can add the common VPM URL; beta.10 requires a valid product key to use the tool. Product tester keys are delivered separately by the owner; never put actual keys, private invitation messages, signing material or development history in this repository.
+The guide includes installation, trial tasks, optional hints and feedback instructions. Anyone can add the common VPM URL; Katachia requires a valid product key to use the tool. Product tester keys are delivered separately by the owner; never put actual keys, private invitation messages, signing material or development history in this repository.
 
 The guide can read a key from the URL fragment supplied in a private message. It removes that fragment immediately and stores the key only in memory until the page is closed or reloaded. Fragments are not part of HTTP requests, but the complete link remains sensitive: anyone receiving it can copy that key. This does not provide identity verification or remote revocation. Unity validates the product key signature and expiry.
 
@@ -39,3 +39,11 @@ The first candidate is `0.2.0-beta.7`, 6,205,884 bytes, SHA256 `2f069c45b1fd70e7
 - Free edition ended; existing valid keys, data and .anim references remain. Bundled capture expression/pose presets retired.
 - Same repository identity and previous versions remain. Only new Photos~/Reports~ output locations; no old-file migration.
 - Remaining Unity checks are documented on the public guide and release notes.
+
+## 2026-09-17 beta.11
+
+- Owner explicitly authorized G0-G7 implementation, the HoriCraft/vpm main fast-forward, new tag/prerelease and public download verification. Unity was not launched.
+- Source 13751805d29b24d83e54599b471bd11f657a63c0; 12759159 bytes; SHA256 4c88fe6fc8d84d93a58c9460b25490a55ee73a2b057b8270d146058d016443e8.
+- Three-purpose header, recent five saves, compact comparison sources and one primary photo action. Background, GIF, startup and wording fixes from the preceding batch are included.
+- All previous listing entries and repository IDs/URLs remain identical. Existing keys, Runtime schema, SavedPhotos capture path and ExpressionWorkspace remain unchanged.
+- Automated checks include the extracted release ZIP in four compile configurations. Native Unity layout, NDMF rendering, fresh installation and update retention remain for tester verification.
