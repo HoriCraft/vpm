@@ -51,3 +51,9 @@ The first candidate is `0.2.0-beta.7`, 6,205,884 bytes, SHA256 `2f069c45b1fd70e7
 ## 2026-09-18 beta.12
 
 Owner explicitly authorized implementation and publication. Source 3b52ebd6babe6c3ec932ebfb7be2d3545f1e8f2a; 12765297 bytes; SHA256 51a765d769e93c98d594028540f57e329f1f8d22d49480463433aa7366799122. Face/history/copy, photography controls and expression guidance improved. Native Unity validation remains pending. Existing entries/IDs/keys and Runtime schema preserved.
+
+## 2026-09-18 beta.13
+
+Owner explicitly authorized implementation/publication and a public beta12 reference. Source b48061f2db21468b1b55a29e18f82fd26df258e1; 12776129 bytes; SHA256 348b8f86f1a2c0b422e0a0565cff5d0e0bac636e7099f48b900d03cfe423ae9f. Purpose-based transfers, capture failure handling, persisted settings and UI clarity. Native Unity validation pending. Old entries, IDs, meta, keys and Runtime schema preserved.
+
+[beta12 review reference](katachia/beta12-review.md)

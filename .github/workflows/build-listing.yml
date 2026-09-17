@@ -180,7 +180,7 @@ jobs:
         run: |
           node scripts/verify-katachia.mjs
           mkdir -p _site/katachia
-          cp site/katachia/* _site/katachia/
+          cp -R site/katachia/. _site/katachia/
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -4,9 +4,17 @@ import {config} from '../site/katachia/release.mjs';
 import {validateListing,addRepositoryUrl} from '../site/katachia/model.mjs';
 
 const root=new URL('../site/katachia/',import.meta.url);
-const files=['app.mjs','index.html','index.json','model.mjs','release.mjs','style.css'];
-const entries=await readdir(root,{withFileTypes:true});
-if(entries.some(entry=>!entry.isFile())||JSON.stringify(entries.map(entry=>entry.name).sort())!==JSON.stringify(files))throw Error('Unexpected public files');
+const files=['app.mjs','index.html','index.json','model.mjs','release.mjs','review/beta12.html','style.css'];
+async function publicFiles(folder,prefix=''){
+ const result=[];
+ for(const entry of await readdir(folder,{withFileTypes:true})){
+  if(entry.isDirectory())result.push(...await publicFiles(new URL(entry.name+'/',folder),prefix+entry.name+'/'));
+  else if(entry.isFile())result.push(prefix+entry.name);
+  else throw Error('Unexpected public file type');
+ }
+ return result;
+}
+if(JSON.stringify((await publicFiles(root)).sort())!==JSON.stringify(files))throw Error('Unexpected public files');
 for(const file of files){
   const value=await readFile(new URL(file,root),'utf8');
   if(/KTC1\.[A-Za-z0-9+/]+={0,2}\.[A-Za-z0-9+/]+={0,2}|-----BEGIN [A-Z ]*PRIVATE KEY-----/.test(value))throw Error('Secret-like material in public files');
@@ -32,4 +40,4 @@ if(args[0]==='--remote'){
   bytes=Buffer.concat(chunks);
 }
 if(bytes && (bytes.length!==config.bytes||createHash('sha256').update(bytes).digest('hex')!==config.sha256))throw Error('Package size/SHA256 mismatch');
-console.log('PASS: six public files, key exclusion, VPM catalog, subdirectory URLs'+(bytes?', package size/SHA256':'; package download not checked'));
+console.log('PASS: seven public files, key exclusion, VPM catalog, subdirectory URLs'+(bytes?', package size/SHA256':'; package download not checked'));
