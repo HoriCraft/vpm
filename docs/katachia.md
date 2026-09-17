@@ -47,3 +47,7 @@ The first candidate is `0.2.0-beta.7`, 6,205,884 bytes, SHA256 `2f069c45b1fd70e7
 - Three-purpose header, recent five saves, compact comparison sources and one primary photo action. Background, GIF, startup and wording fixes from the preceding batch are included.
 - All previous listing entries and repository IDs/URLs remain identical. Existing keys, Runtime schema, SavedPhotos capture path and ExpressionWorkspace remain unchanged.
 - Automated checks include the extracted release ZIP in four compile configurations. Native Unity layout, NDMF rendering, fresh installation and update retention remain for tester verification.
+
+## 2026-09-18 beta.12
+
+Owner explicitly authorized implementation and publication. Source 3b52ebd6babe6c3ec932ebfb7be2d3545f1e8f2a; 12765297 bytes; SHA256 51a765d769e93c98d594028540f57e329f1f8d22d49480463433aa7366799122. Face/history/copy, photography controls and expression guidance improved. Native Unity validation remains pending. Existing entries/IDs/keys and Runtime schema preserved.
