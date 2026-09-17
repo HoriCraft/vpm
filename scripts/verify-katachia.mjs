@@ -4,7 +4,7 @@ import {config} from '../site/katachia/release.mjs';
 import {validateListing,addRepositoryUrl} from '../site/katachia/model.mjs';
 
 const root=new URL('../site/katachia/',import.meta.url);
-const files=['app.mjs','index.html','index.json','model.mjs','release.mjs','review/beta12.html','review/beta13.html','style.css'];
+const files=['app.mjs','index.html','index.json','model.mjs','release.mjs','review/beta12.html','review/beta13.html','review/beta14.html','style.css'];
 async function publicFiles(folder,prefix=''){
  const result=[];
  for(const entry of await readdir(folder,{withFileTypes:true})){
@@ -40,4 +40,4 @@ if(args[0]==='--remote'){
   bytes=Buffer.concat(chunks);
 }
 if(bytes && (bytes.length!==config.bytes||createHash('sha256').update(bytes).digest('hex')!==config.sha256))throw Error('Package size/SHA256 mismatch');
-console.log('PASS: eight public files, key exclusion, VPM catalog, subdirectory URLs'+(bytes?', package size/SHA256':'; package download not checked'));
+console.log('PASS: public files, key exclusion, VPM catalog, subdirectory URLs'+(bytes?', package size/SHA256':'; package download not checked'));

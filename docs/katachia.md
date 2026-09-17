@@ -61,3 +61,7 @@ Owner explicitly authorized implementation/publication and a public beta12 refer
 ## Public beta.13 review reference
 
 The owner requested a beta.13 reference readable from ChatGPT, following the beta.12 reference. [beta13 review](katachia/beta13-review.md) and its [frozen changelog](katachia/beta13-changelog.md) describe the shipped source, all 29 feedback dispositions, automatic validation and remaining Unity checks. [Mobile HTML](https://horicraft.github.io/vpm/katachia/review/beta13.html) is static and requires no login or JavaScript. Beta.12 documents remain unchanged. This documentation update does not alter the package, VPM listing, release tag, keys or product repository visibility.
+
+## 2026-09-18 beta.14
+
+Owner authorized implementation and publication. UI history consistency and shape editing; Unity validation pending. Source 87d138b592e6252a82ff0d044ec11207c2896c76. 12792337 bytes, SHA256 8eddcde76115039c9609911869690ec497a48606bf250fd0aa36c4d6234de2e1. Existing version entries, meta GUIDs, keys and Runtime schema preserved. [Review](katachia/beta14-review.md).
