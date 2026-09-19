@@ -4,7 +4,7 @@ import {config} from '../site/katachia/release.mjs';
 import {validateListing,addRepositoryUrl} from '../site/katachia/model.mjs';
 
 const root=new URL('../site/katachia/',import.meta.url);
-const files=['app.mjs','index.html','index.json','model.mjs','release.mjs','review/beta12.html','review/beta13.html','review/beta14.html','review/beta15.html','style.css'];
+const files=['app.mjs','index.html','index.json','model.mjs','release.mjs','review/beta12.html','review/beta13.html','review/beta14.html','review/beta15.html','review/beta16.html','style.css'];
 async function publicFiles(folder,prefix=''){
  const result=[];
  for(const entry of await readdir(folder,{withFileTypes:true})){

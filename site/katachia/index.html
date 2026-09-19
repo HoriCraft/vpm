@@ -11,15 +11,16 @@
 <a class="skip" href="#install">導入へ進む</a>
 <header><a class="brand" href="#"><span class="symbol" aria-hidden="true">K</span>Katachia<span class="badge">BETA TEST</span></a><a class="quiet" href="#feedback">提案を送る</a></header>
 <main>
-<section class="intro"><p class="eyebrow">HoriCraft / BETA PREVIEW</p><h1>いつもの改変で、<br class="mobile">使い心地を教えてください。</h1><p>まずは15〜30分。正解を探すテストではありません。<br>迷った場所も、気に入った操作も、そのまま教えてもらえるとうれしいです。</p><div class="facts"><span id="version">0.2.0-beta.15</span><span>製品版テスト：2026年10月13日まで</span><span>Windows / Unity 2022.3</span></div></section>
+<section class="intro"><p class="eyebrow">HoriCraft / BETA PREVIEW</p><h1>いつもの改変で、<br class="mobile">使い心地を教えてください。</h1><p>まずは15〜30分。正解を探すテストではありません。<br>迷った場所も、気に入った操作も、そのまま教えてもらえるとうれしいです。</p><div class="facts"><span id="version">0.2.0-beta.16</span><span>製品版テスト：2026年10月13日まで</span><span>Windows / Unity 2022.3</span></div></section>
 <div id="connection" class="notice" role="status">配布情報を読み込んでいます…</div>
-<section class="small-print" id="update-beta15"><h2>beta.15へ更新する方へ</h2>
-<p>ALCOM／VCCで一覧を再読み込みし、Katachiaを<strong>0.2.0-beta.15</strong>へ更新してください。リポジトリと有効な解除キーはそのまま使えます。</p>
-<p><strong>今の顔を保存</strong>はプレビュー画像のすぐ下に移りました。表情を作るときは同じ場所が「表情を保存」になり、保存後に「顔を整える／この表情で撮影／続けて編集／新しく表情を作る」を選べます。</p>
-<p>顔を整える画面の<strong>「配布Prefabと比べる」</strong>欄へ配布 .prefab をドラッグすると、配布時の姿（Before）と今の顔（After）をリアルタイムで比べ、そのまま撮影できます。元のPrefabやシーンは変わりません。</p>
-<details open><summary>まず確認してほしい3つ</summary><ol><li>保存ボタンが画像の下にあり、比較中も同じ場所にあるか。</li><li>表情を保存したあとの4つの行き先が見え、警告なしで保存できるか。</li><li>配布Prefabをドラッグして比較・撮影でき、Hierarchyに何も残らないか。</li></ol>
-<p>4構成コンパイル・回帰検査・翻訳・配布物を検査。自動操作で撮ったUnity画面を確認していますが、NDMF ONの実描画・再起動後の保持は未確認です。旧版のURLとIDは保持します。</p></details>
-<p><a href="review/beta15.html">β15の変更と確認待ち</a></p></section>
+<section class="small-print" id="update-beta16"><h2>beta.16へ更新する方へ</h2>
+<p>ALCOM／VCCで一覧を再読み込みし、Katachiaを<strong>0.2.0-beta.16</strong>へ更新してください。リポジトリと有効な解除キーはそのまま使えます。</p>
+<p><strong>写真は撮影プレビューに見えている絵そのまま</strong>になりました。撮影のたびにNDMFを通し直さないので、髪の位置や材質がプレビューとずれません。プレビューのBeforeがピンクになる不具合の原因（NDMFが次のビルドで前回の生成アセットを消す）を直しました。</p>
+<p><strong>今の顔を保存</strong>のたびに、そのときの見た目を独立した .prefab として <code>Assets/HoriCraft/Katachia/Snapshots/</code> に記録します。材質・メッシュ・テクスチャは共有コピーで、2回目以降は数MB以下です。記録のある保存顔は配布Prefabと同じ独立描画で比べ・撮影できます。</p>
+<p>タブは「顔を改変／表情を作る／写真撮影」。表情の保存行は「表情名／名前を編集／表情を保存」、保存後の行き先はその下に出ます。</p>
+<details open><summary>まず確認してほしい3つ</summary><ol><li>NDMF ONで撮った写真がプレビューと同じか（<code>ndmf.txt</code> が applied (preview) か）。</li><li>配布Prefab比較のBeforeがピンクにならないか。</li><li>保存のたびに Snapshots に .prefab ができ、Hierarchyのアバターと元Prefabの繋がりが変わらないか。</li></ol>
+<p>4構成コンパイル・回帰33本・翻訳・配布物を検査。自動操作で撮ったUnity画面を確認していますが、NDMFの分身がある状態の撮影と再起動後の保持は未確認です。旧版のURLとIDは保持します。</p></details>
+<p><a href="review/beta16.html">β16の変更と確認待ち</a></p></section>
 <div class="onboarding">
 <section id="install" class="step"><div class="step-number">01</div><h2>検証用プロジェクトへ追加</h2><p>普段の制作プロジェクトをコピーするか、検証用のAvatarプロジェクトを用意してください。</p><button id="add-repo" class="primary" disabled>VCC・ALCOMに追加する</button><button id="copy-repo" class="text-button" disabled>追加用URLをコピー</button><p class="hint">ボタンはPCに登録されているVCCまたはALCOMを開きます。スマホでは、このページをUnityを使うPCで開いてください。</p><details><summary>導入手順・ボタンで開かないとき</summary><ol><li>VCC／ALCOMでリポジトリの追加を確認します。</li><li>「ベータ版／プレリリースを表示」をONにします。</li><li>検証用プロジェクトのパッケージ管理で<strong>Katachia</strong>を追加します。</li><li>Unityを開き、上のメニューから<strong>HoriCraft → Katachia</strong>を開きます。</li></ol><p>VCCでベータが見えないとき：Settings → Packages → Show Pre-Release PackagesをON。ALCOMでは設定のプレリリース表示を確認してください。</p><p>ボタンが開かない場合は「追加用URLをコピー」し、VCCのSettings → Packages → Add Repository、またはALCOMのリポジトリ追加欄へ貼り付けてください。</p></details></section>
 <section class="step"><div class="step-number">02</div><h2>製品版の機能を使う</h2><p>テスター用キーを受け取った方は、下のボタンでコピーしてKatachiaに登録します。</p><div class="key-summary"><span aria-hidden="true">•••• •••• ••••</span><span id="recipient">テスター用解除キー</span></div><button id="copy-key" class="primary" disabled>解除キーをコピー</button><p class="hint" id="key-hint">個別DMで受け取ったキー付きリンクから開くとコピーできます。Katachiaの利用には有効な解除キーが必要です。</p><p class="hint">キーとキー付きリンクは、ほかの方へ共有しないでください。参加を希望する方は<a href="https://x.com/SansanHori" target="_blank" rel="noopener noreferrer">@SansanHoriへDM</a>でご連絡ください。</p><details open><summary>登録のしかた</summary><ol><li>未登録時はKatachiaを開くとキー登録画面が出ます。登録済みの場合は<strong>「設定」</strong>を開きます。</li><li><strong>「製品版の解除キー」</strong>に貼り付けます。</li><li><strong>「キーを登録する」</strong>を押します。</li><li>画面上部が<strong>「製品版」</strong>になれば完了です。</li></ol></details><details><summary>期限・登録解除・別のPCについて</summary><p>2026年10月13日まで製品版を試せます。期限後はキー登録画面へ戻ります。保存した顔・表情・写真は削除されません。</p><p>キー登録を外す操作は、設定の「このPCのキー登録を解除」です。誤ったキーで上書きしようとしても、現在の有効な登録は維持する設計です。</p><p>キーの登録はPCごとです。更新時の再登録は通常不要です。キーが通らない場合は、キー本文を報告画像に入れず、表示された案内をDMで教えてください。</p></details></section>

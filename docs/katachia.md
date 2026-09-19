@@ -69,3 +69,7 @@ Owner authorized implementation and publication. UI history consistency and shap
 ## 2026-09-19 beta.15
 
 Owner requested implementation and publication of the save-button relocation, expression flow and distributed-prefab comparison. Source 8355692f4555f8c04e468fdc3bfe86cb96a0d250. 12811123 bytes, SHA256 2d8dd8b617a07023813315c8f7ba70ca0bc37688cc64e8b5f4b938cbc67df389. Existing version entries, meta GUIDs, keys and Runtime schema preserved. Unity validation status is recorded in the product repository. [Review](katachia/beta15-review.md).
+
+## 2026-09-19 beta.16
+
+Owner requested implementation and publication of the save-button relocation, expression flow and distributed-prefab comparison. Source 142bbb9d2385b759e705eb6ee8663aca66ed3349. 12829665 bytes, SHA256 333d0b0b15ee39ae681724d016fea544cc3252586ad32c436374c4a94473459d. Existing version entries, meta GUIDs, keys and Runtime schema preserved. Unity validation status is recorded in the product repository. [Review](katachia/beta16-review.md).
