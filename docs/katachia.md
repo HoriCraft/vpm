@@ -73,3 +73,7 @@ Owner requested implementation and publication of the save-button relocation, ex
 ## 2026-09-19 beta.16
 
 Owner requested implementation and publication of the save-button relocation, expression flow and distributed-prefab comparison. Source 142bbb9d2385b759e705eb6ee8663aca66ed3349. 12829665 bytes, SHA256 333d0b0b15ee39ae681724d016fea544cc3252586ad32c436374c4a94473459d. Existing version entries, meta GUIDs, keys and Runtime schema preserved. Unity validation status is recorded in the product repository. [Review](katachia/beta16-review.md).
+
+## 2026-09-22 beta.17
+
+Owner explicitly requested beta.17 publication. Source cd661e7dafc12bb1143babfadf2cc94cea6f28eb. 12835984 bytes, SHA256 cbeee4d9124cb88446e609ad79d1fe78007b98f951274cf7643d8817fb1eab3a. NDMF readiness, single-face-only expressions/poses, per-side camera alignment and UI guidance updated. Old versions, meta GUIDs, keys and Runtime schema preserved. Automated checks passed; Unity real rendering and installation remain unverified. [Review](katachia/beta17-review.md).

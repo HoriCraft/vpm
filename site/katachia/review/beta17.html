@@ -1,0 +1,33 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Katachia beta.17 レビュー資料</title><style>body{font:16px/1.8 system-ui;max-width:850px;padding:24px;margin:auto;color:#203030;background:#f5f7f6}article{background:white;padding:20px;border-radius:12px}pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}a{color:#075f58}</style><h1>Katachia β17：変更と確認待ち</h1><p>2026-09-22／テスター版。認証なしで参照できます。</p><article><pre># Katachia 0.2.0-beta.17
+
+2026-09-22 / テスター向けプレリリース
+
+## 更新方法
+ALCOM／VCCで既存のリポジトリを再読み込みし、Katachiaを 0.2.0-beta.17 へ更新してください。リポジトリの再登録と、有効な解除キーの再配布は不要です。
+
+- 案内: https://horicraft.github.io/vpm/katachia/
+- 固定VPM: https://horicraft.github.io/vpm/katachia/index.json
+
+## 変更
+- NDMFをONにしている場合は、準備が整ってから撮影します。未準備のまま未反映の写真を作る経路を止め、準備中の案内と再試行を用意しました。写真が作れない場合も顔の数値保存は残します。
+- 表情・ポーズの選び直しでプレビューを更新する条件を修正しました。比較では両側ともOFFにし、「1つの顔」へ戻ると選択を再利用します。
+- 正面の向きと顔の高さの基準を見直しました。「正面・低め」は正面と同じ向きでカメラを少し下げます。
+- Before／Afterごとの位置合わせを追加しました。アバター本体を動かさず、補正を比較からPNG／GIFの撮影へ引き継ぎます。固定写真は対象外です。
+- 比べるPrefabの案内、保存した見た目の控えの説明、表情の保存行を整えました。
+- 撮影用の複製からだけKatachiaの履歴部品を取り除きます。元のアバターと通常の履歴は維持します。
+
+## 検査と未確認
+4構成のコンパイル、36回帰スイート、翻訳906件（不足・未使用0）を確認しました。配布ZIPを展開した4構成コンパイル、ローカルHTTPでのZIP取得検査、旧版メタデータ・Runtime・解除キー関連ファイルの保持も確認しました。これらはUnity実機の合格を示しません。
+
+β17ではUnityを起動していません。実NDMF・GPU描画、髪と材質、実アバターのポーズ、小さい画面、Undo・再起動・新規導入は未確認です。以前の版の本人結果をβ17の合格へ転記しません。
+
+NDMFのライブ用分身が0件の場合、対象がない状態と未準備を区別できないため、ライブ撮影を止めることがあります。完全ビルド済みの複製は0件でも撮影できます。分身が存在することだけで、すべてのプラグイン処理完了を保証するものではありません。
+
+まず単体の表情・ポーズ更新、比較でのOFFと単体への復帰、位置合わせの撮影への引き継ぎを確認してください。
+
+## 配布物
+Source: cd661e7dafc12bb1143babfadf2cc94cea6f28eb
+SHA-256: cbeee4d9124cb88446e609ad79d1fe78007b98f951274cf7643d8817fb1eab3a
+
+既存β7〜16のURL・ID・配布物は変更しません。保存形式、既存のGUID、解除キー方式を維持します。
+</pre></article><p><a href="../">テスターガイド</a> · <a href="beta16.html">β16の記録</a></p></html>
