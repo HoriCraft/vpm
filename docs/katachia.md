@@ -81,3 +81,7 @@ Owner explicitly requested beta.17 publication. Source cd661e7dafc12bb1143babfad
 ## 2026-10-14 beta.18
 
 Owner explicitly requested beta.18 publication. Source 5815f5faa327c1b9a7ab4071a25203ddf391267d (branch claude/beta18-sale-fixes-20261011). 12859067 bytes, SHA256 239039e3b09c5aa25a5e7313857149d40f599300bc84fc8f649e0672749a0390. Snapshot BlendShape/material identity fixes, PR#1 hardening (no auto-registration on open, .anim export scope, uninstall preparation, progress and retry fixes), NDMF-not-installed capture, upload ID removed from appearance snapshots, key removal confirmation. Existing version entries and meta GUIDs kept; one file added (Editor/ImageEncoding.cs). Unity was not started.
+
+## 2026-10-14 beta.19
+
+Owner requested publishing a version with key verification disabled (free release). Source 032449272b0f8d221d61d160f4e0fdb6b808db16 (branch claude/beta19-free-20261014). 12859824 bytes, SHA256 5ae3a3e1aff69d107e87c7397cff447122cfcff987802991a6d2251ebc8f60d4. KatachiaEdition.KeyRequired=false opens all features without a key; key verification code and any registered key are kept. Otherwise identical to beta.18. Guide page key step updated. Unity was not started.
