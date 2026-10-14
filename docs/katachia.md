@@ -93,3 +93,7 @@ Owner reported broken NDMF rendering when comparing with a saved face and asked 
 ## 2026-10-15 beta.21
 
 Owner reported the capture button could not be pressed: entering capture threw on an out-of-range carried-over angle. Source dbb74e378c08060838f4ebb90bb1c1ba9a565847 (branch claude/beta21-capture-button-20261015). 12861325 bytes, SHA256 e51f614826a39f53fe307ed5f810e47a4f24c2e1879b701e29c5dd7ded8c8a62. Angles are clamped into range and a failed view transfer falls back to the front view. Unity was not started.
+
+## 2026-10-15 beta.22
+
+Owner asked to keep the BlendShape sort order and the selected avatar across reloads. Source 02640874d009b90afa434f884a47c30509d8dddd (branch claude/beta22-remember-view-20261015). 12862264 bytes, SHA256 49c6fa765cf7c559797fad2407714577244526b1d4d91189f1fa9220a4d6b406. Sort order is stored in EditorPrefs; the selected avatar is remembered per scene by GlobalObjectId and restored only if it already has the Katachia history component. Unity was not started.
