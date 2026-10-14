@@ -97,3 +97,7 @@ Owner reported the capture button could not be pressed: entering capture threw o
 ## 2026-10-15 beta.22
 
 Owner asked to keep the BlendShape sort order and the selected avatar across reloads. Source 02640874d009b90afa434f884a47c30509d8dddd (branch claude/beta22-remember-view-20261015). 12862264 bytes, SHA256 49c6fa765cf7c559797fad2407714577244526b1d4d91189f1fa9220a4d6b406. Sort order is stored in EditorPrefs; the selected avatar is remembered per scene by GlobalObjectId and restored only if it already has the Katachia history component. Unity was not started.
+
+## 2026-10-15 beta.23
+
+Owner approved the recommended UI simplification set and asked for video instead of GIF. Source 4e42437f496cb47b3956a41694f114490d0752a5 (branch claude/beta23-ui-simplify-20261015). 12868301 bytes, SHA256 cac588661ca711bcc2a66c7d1a7513eee6f6b784a6987dbcd1f6e09f0662421d. Adds PNG/GIF/Video format buttons and MP4 export via UnityEditor.Media.MediaEncoder (H.264 Main), always-visible filter summary and sort buttons, and an empty state for avatar selection. One file added (Editor/ComparisonVideo.cs). Unity was not started; actual MP4 output is unverified.
