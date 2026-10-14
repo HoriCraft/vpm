@@ -77,3 +77,7 @@ Owner requested implementation and publication of the save-button relocation, ex
 ## 2026-09-22 beta.17
 
 Owner explicitly requested beta.17 publication. Source cd661e7dafc12bb1143babfadf2cc94cea6f28eb. 12835984 bytes, SHA256 cbeee4d9124cb88446e609ad79d1fe78007b98f951274cf7643d8817fb1eab3a. NDMF readiness, single-face-only expressions/poses, per-side camera alignment and UI guidance updated. Old versions, meta GUIDs, keys and Runtime schema preserved. Automated checks passed; Unity real rendering and installation remain unverified. [Review](katachia/beta17-review.md).
+
+## 2026-10-14 beta.18
+
+Owner explicitly requested beta.18 publication. Source 5815f5faa327c1b9a7ab4071a25203ddf391267d (branch claude/beta18-sale-fixes-20261011). 12859067 bytes, SHA256 239039e3b09c5aa25a5e7313857149d40f599300bc84fc8f649e0672749a0390. Snapshot BlendShape/material identity fixes, PR#1 hardening (no auto-registration on open, .anim export scope, uninstall preparation, progress and retry fixes), NDMF-not-installed capture, upload ID removed from appearance snapshots, key removal confirmation. Existing version entries and meta GUIDs kept; one file added (Editor/ImageEncoding.cs). Unity was not started.
