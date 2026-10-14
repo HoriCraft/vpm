@@ -89,3 +89,7 @@ Owner requested publishing a version with key verification disabled (free releas
 ## 2026-10-14 beta.20
 
 Owner reported broken NDMF rendering when comparing with a saved face and asked to photograph the scene instead. Source 588cff605df84019d37e3a745174d17b7e10d564 (branch claude/beta20-scene-photo-20261014). 12860398 bytes, SHA256 ceda93a3ecf550cb332edec01bc9dbd28f74ec14fbaad8415d6463e7619be194. Saved-face comparison now overlays saved values on the scene avatar (NDMF preview) instead of cloning the snapshot prefab and rebuilding with NDMF; reference-prefab comparison copies only NDMF-generated assets. No key required. Unity was not started.
+
+## 2026-10-15 beta.21
+
+Owner reported the capture button could not be pressed: entering capture threw on an out-of-range carried-over angle. Source dbb74e378c08060838f4ebb90bb1c1ba9a565847 (branch claude/beta21-capture-button-20261015). 12861325 bytes, SHA256 e51f614826a39f53fe307ed5f810e47a4f24c2e1879b701e29c5dd7ded8c8a62. Angles are clamped into range and a failed view transfer falls back to the front view. Unity was not started.
