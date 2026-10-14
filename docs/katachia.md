@@ -85,3 +85,7 @@ Owner explicitly requested beta.18 publication. Source 5815f5faa327c1b9a7ab4071a
 ## 2026-10-14 beta.19
 
 Owner requested publishing a version with key verification disabled (free release). Source 032449272b0f8d221d61d160f4e0fdb6b808db16 (branch claude/beta19-free-20261014). 12859824 bytes, SHA256 5ae3a3e1aff69d107e87c7397cff447122cfcff987802991a6d2251ebc8f60d4. KatachiaEdition.KeyRequired=false opens all features without a key; key verification code and any registered key are kept. Otherwise identical to beta.18. Guide page key step updated. Unity was not started.
+
+## 2026-10-14 beta.20
+
+Owner reported broken NDMF rendering when comparing with a saved face and asked to photograph the scene instead. Source 588cff605df84019d37e3a745174d17b7e10d564 (branch claude/beta20-scene-photo-20261014). 12860398 bytes, SHA256 ceda93a3ecf550cb332edec01bc9dbd28f74ec14fbaad8415d6463e7619be194. Saved-face comparison now overlays saved values on the scene avatar (NDMF preview) instead of cloning the snapshot prefab and rebuilding with NDMF; reference-prefab comparison copies only NDMF-generated assets. No key required. Unity was not started.
