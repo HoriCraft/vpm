@@ -105,3 +105,7 @@ Owner approved the recommended UI simplification set and asked for video instead
 ## 2026-10-17 beta.24
 
 Owner found it tedious that starting an expression switched the preview to saved-face comparison. Source b83c0c487c20f5eac76db0375f3297d3af3ee35a (branch claude/beta24-expression-view-20261017). 12868504 bytes, SHA256 d5588aa87a8f0bbeed37c28532f2d4e411d6427a09b4b37a06fbcdeb9be60d0a. Starting an expression keeps the current preview mode (photography falls back to the current face). Unity was not started.
+
+## 2026-10-17 beta.25
+
+Owner found expression saving slow and asked to start new expressions from existing ones (history and external .anim). Source 63eda2f938126e234bcf58deb4c5ea4e113138a6 (branch claude/beta25-fast-expression-save-20261017). 12872143 bytes, SHA256 892e1a205579705330f44d5217f65e97073cbbb763e23a70151332be0194a22f. Expression save no longer clones the avatar, rebuilds it with NDMF and takes unused photos, and no longer refreshes the whole AssetDatabase. New: create a new expression from a saved expression or an external .anim. One file added (Editor/ExpressionTemplates.cs). Unity was not started.
