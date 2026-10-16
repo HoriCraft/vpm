@@ -101,3 +101,7 @@ Owner asked to keep the BlendShape sort order and the selected avatar across rel
 ## 2026-10-15 beta.23
 
 Owner approved the recommended UI simplification set and asked for video instead of GIF. Source 4e42437f496cb47b3956a41694f114490d0752a5 (branch claude/beta23-ui-simplify-20261015). 12868301 bytes, SHA256 cac588661ca711bcc2a66c7d1a7513eee6f6b784a6987dbcd1f6e09f0662421d. Adds PNG/GIF/Video format buttons and MP4 export via UnityEditor.Media.MediaEncoder (H.264 Main), always-visible filter summary and sort buttons, and an empty state for avatar selection. One file added (Editor/ComparisonVideo.cs). Unity was not started; actual MP4 output is unverified.
+
+## 2026-10-17 beta.24
+
+Owner found it tedious that starting an expression switched the preview to saved-face comparison. Source b83c0c487c20f5eac76db0375f3297d3af3ee35a (branch claude/beta24-expression-view-20261017). 12868504 bytes, SHA256 d5588aa87a8f0bbeed37c28532f2d4e411d6427a09b4b37a06fbcdeb9be60d0a. Starting an expression keeps the current preview mode (photography falls back to the current face). Unity was not started.
