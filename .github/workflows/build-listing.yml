@@ -182,6 +182,12 @@ jobs:
           mkdir -p _site/katachia
           cp -R site/katachia/. _site/katachia/
 
+      - name: MeshEraser の公開テスト案内を追加する
+        run: |
+          node scripts/verify-mesheraser-test.mjs
+          mkdir -p _site/mesheraser-test
+          cp -R site/mesheraser-test/. _site/mesheraser-test/
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
