@@ -241,6 +241,20 @@
           "vpmDependencies": {},
           "url": "https://github.com/HoriCraft/vpm/releases/download/katachia-v0.2.0-beta.25/com.horicraft.katachia-0.2.0-beta.25.zip",
           "zipSHA256": "892e1a205579705330f44d5217f65e97073cbbb763e23a70151332be0194a22f"
+        },
+        "0.2.0-beta.26": {
+          "name": "com.horicraft.katachia",
+          "displayName": "Katachia",
+          "version": "0.2.0-beta.26",
+          "unity": "2022.3",
+          "description": "VRChat avatar face tuning: adjust BlendShapes with live preview, save named states on the avatar, and compare any two states with photos.",
+          "author": {
+            "name": "HoriCraft"
+          },
+          "vpmDependencies": {},
+          "url": "https://github.com/HoriCraft/vpm/releases/download/katachia-v0.2.0-beta.26/com.horicraft.katachia-0.2.0-beta.26.zip",
+          "zipSHA256": "85ed1c7c0ddbadbb1df92e5277fb818873b60338e27c228764b2240278ad4f1c",
+          "repo": "https://horicraft.github.io/vpm/katachia/index.json"
         }
       }
     }

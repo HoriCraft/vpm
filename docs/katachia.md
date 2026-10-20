@@ -109,3 +109,7 @@ Owner found it tedious that starting an expression switched the preview to saved
 ## 2026-10-17 beta.25
 
 Owner found expression saving slow and asked to start new expressions from existing ones (history and external .anim). Source 63eda2f938126e234bcf58deb4c5ea4e113138a6 (branch claude/beta25-fast-expression-save-20261017). 12872143 bytes, SHA256 892e1a205579705330f44d5217f65e97073cbbb763e23a70151332be0194a22f. Expression save no longer clones the avatar, rebuilds it with NDMF and takes unused photos, and no longer refreshes the whole AssetDatabase. New: create a new expression from a saved expression or an external .anim. One file added (Editor/ExpressionTemplates.cs). Unity was not started.
+
+## 2026-10-21 beta.26
+
+Owner requested publishing beta.26 to update through ALCOM. Source 55dde96f9688ad1f1143f8e6d019e0e68b37faaf. 12875216 bytes, SHA256 85ed1c7c0ddbadbb1df92e5277fb818873b60338e27c228764b2240278ad4f1c. Adds an optional Hierarchy Ctrl+G mode (default OFF) to toggle selected objects between inactive + EditorOnly and active + Untagged, with grouped Undo and prefab-instance override recording. Multiple selections are unified. Prefab assets/stages and preview scenes are excluded. 4 compile configurations, 46 regression suites and 991 translation keys checked. Actual shortcut conflicts, Unity Undo/Redo and restart persistence remain unverified. No key required. Prior versions remain unchanged.
