@@ -113,3 +113,7 @@ Owner found expression saving slow and asked to start new expressions from exist
 ## 2026-10-21 beta.26
 
 Owner requested publishing beta.26 to update through ALCOM. Source 55dde96f9688ad1f1143f8e6d019e0e68b37faaf. 12875216 bytes, SHA256 85ed1c7c0ddbadbb1df92e5277fb818873b60338e27c228764b2240278ad4f1c. Adds an optional Hierarchy Ctrl+G mode (default OFF) to toggle selected objects between inactive + EditorOnly and active + Untagged, with grouped Undo and prefab-instance override recording. Multiple selections are unified. Prefab assets/stages and preview scenes are excluded. 4 compile configurations, 46 regression suites and 991 translation keys checked. Actual shortcut conflicts, Unity Undo/Redo and restart persistence remain unverified. No key required. Prior versions remain unchanged.
+
+## 2026-10-24 beta.27
+
+Owner approved publishing beta.27 for visual checks through ALCOM. Source f0095d50d495b35131fe4fb79385fc625e86b6b7. 12871759 bytes, SHA256 f022a33bda04a37c880dbdaf3303a717e9e00206668526beee8f21d93dab011e. Simplifies UI wording and removes redundant secondary labels in settings, expressions, comparison and photography. Groups the external .anim field and draft action in a wrapping row. Keeps editing state, limitations, errors and important save/Undo notices. Processing and storage formats are unchanged. Four compile configurations, 46 regression suites and 979 translation keys checked. Actual appearance, narrow layouts and long filenames remain unverified in Unity. Existing versions are preserved; no key required.
