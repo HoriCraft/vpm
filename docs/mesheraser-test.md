@@ -2,8 +2,8 @@
 
 - Guide: https://horicraft.github.io/vpm/mesheraser-test/
 - VPM repository: https://horicraft.github.io/vpm/mesheraser-test/index.json
-- Package: `com.horicraft.mesh-eraser`, `1.1.0-beta.4`
-- GitHub prerelease: `mesheraser-v1.1.0-beta.4`
+- Package: `com.horicraft.mesh-eraser`, `1.1.0-beta.5`
+- GitHub prerelease: `mesheraser-v1.1.0-beta.5`
 
 This is a separate opt-in test repository. It does not add MeshEraser to the stable HoriCraft listing or change the existing TexSlim/Katachia routes. Do not add HoriCraft/vpm to sources.json: its releases contain multiple products.
 
@@ -11,15 +11,13 @@ Use a test avatar project without an old Assets installation. Enable **Show Pre-
 
 The package contains the common trial/purchased implementation, without an unlock key. Buyers retain their private key document. Legacy product-file authentication and migration of an Assets installation are separate operations. Never publish buyer documents, unlock keys, development helpers or private project data in this repository or its releases.
 
-Beta.4 is based on the exact published beta.3 archive. It makes Step 2 compact at the existing minimum window size (420 x 520), changes H/C hints to show/hide in four languages, and vertically centers the labels, OFF controls, swatches, picker and shortcut captions. Step 1 keeps its scroll view. All existing controls and their action handlers remain available. Five existing Editor C# files are changed, one Editor layout file and its new metadata are added, and package.json changes only the version. The remaining 94 files, Runtime, build/license code, painted-data definitions and existing GUIDs are unchanged.
+Beta.5 is based on the exact published beta.4 archive. New toggle assets use `Assets/HoriCraft/MeshEraser/Generated/`; existing assets under `Assets/HoriCraft/MeshEraser_Generated/` are neither moved nor deleted. Normal reads retain serialized references. The hidden bake feature recognizes both roots. The folder creator makes missing parent folders and stops if the new root cannot be created.
 
-Archive: 378272 bytes, SHA256 `520f6bc977521995938de60ec2a394094096149fc41ba1aec629d93d46e5c64f`. All 102 files match the reviewed candidate. The original logo bytes are embedded without modification. Version assets are immutable; future package changes require a new prerelease number. The test package excludes the unfinalized terms draft, CHANGELOG and obsolete setup/migration guides under the existing tester-distribution policy.
+Only MaSceneBackend.cs, BakeBackend.cs, the fallback version in MeshEraserWindow.cs and package.json change. The other 98 files, all metadata/GUIDs, Runtime, authentication, paint data and build passes are byte-identical to beta.4. Archive: 373536 bytes; SHA256 `9f11000285656c7b75fe6f607fa1d2317ff2c21cd49e8dd38c5098c416b7e6b6`. The unchanged 102-file tester package policy excludes unfinished terms, CHANGELOG and obsolete migration guides; no buyer key is present.
 
-Compile checks in three dependency profiles, 9,216 production layout calculations and 128 HTML model cases passed. The HTML model is not a Unity screenshot or native acceptance. Actual Unity fit at 420 x 520, picker rendering, H/C controls, paint/settings/reference retention and regression checks remain pending owner testing.
+Three compile profiles passed. Eleven extracted-C# method checks use an in-memory AssetDatabase substitute. Five file-level migration/restore checks preserve new/old generated files and metadata; fixture-only project/process guards differ from production, and multi-version manifests remain harness-only. No Unity/ALCOM installation, save/reload, menu behavior or native migration has been tested for beta.5. The owner will update through ALCOM and perform native checks after publication. Never delete the entire legacy product folder: it can contain generated/user data. Automatic migration is not included.
 
-Beta.1 and beta.3 remain available with their original entries, bytes and checksums. Existing Public Test users can refresh the same repository and select beta.4; no localhost repository or new registration is needed. Save and close Unity before updating. The owner previously installed beta.3 through ALCOM; all 100 installed files matched its published archive.
-
-Beta.3 changed Scene selection in Step 1 to read mesh geometry rather than calling Unity native Scene picking. Its three compile profiles and 8,016 production geometry checks passed. Native assertion recurrence, selection accuracy, performance and actual downgrade remain unverified.
+Beta.1, beta.3 and beta.4 remain available with unchanged entries and downloads. Beta.4's earlier owner feedback covers H/C, paint/settings/references and Scene selection; it does not establish beta.5 acceptance. Existing users refresh the same Public Test repository; no new registration is needed.
 
 ## Verification and publication
 

@@ -53,6 +53,22 @@
           "url": "https://github.com/HoriCraft/vpm/releases/download/mesheraser-v1.1.0-beta.4/com.horicraft.mesh-eraser-1.1.0-beta.4.zip",
           "zipSHA256": "520f6bc977521995938de60ec2a394094096149fc41ba1aec629d93d46e5c64f",
           "repo": "https://horicraft.github.io/vpm/mesheraser-test/index.json"
+        },
+        "1.1.0-beta.5": {
+          "name": "com.horicraft.mesh-eraser",
+          "displayName": "MeshEraser",
+          "version": "1.1.0-beta.5",
+          "unity": "2022.3",
+          "description": "VRChatアバター用・ブラシ操作メッシュ削除ツール。SceneView上で消しゴム感覚で塗って、ビルド時に非破壊でポリゴンを削除する。",
+          "author": {
+            "name": "HoriCraft"
+          },
+          "vpmDependencies": {
+            "nadena.dev.ndmf": ">=1.4.0 <2.0.0"
+          },
+          "url": "https://github.com/HoriCraft/vpm/releases/download/mesheraser-v1.1.0-beta.5/com.horicraft.mesh-eraser-1.1.0-beta.5.zip",
+          "zipSHA256": "9f11000285656c7b75fe6f607fa1d2317ff2c21cd49e8dd38c5098c416b7e6b6",
+          "repo": "https://horicraft.github.io/vpm/mesheraser-test/index.json"
         }
       }
     }
