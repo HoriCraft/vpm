@@ -188,6 +188,12 @@ jobs:
           mkdir -p _site/mesheraser-test
           cp -R site/mesheraser-test/. _site/mesheraser-test/
 
+      - name: MenuTool の先行テスト案内を追加する
+        run: |
+          node scripts/verify-menutool-test.mjs
+          mkdir -p _site/menutool-test
+          cp -R site/menutool-test/. _site/menutool-test/
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

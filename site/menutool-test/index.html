@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MenuTool 先行テスト版 | HoriCraft</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#202124;color:#f1f3f4;font:16px/1.8 system-ui,"Yu Gothic UI",sans-serif}main{max-width:650px;margin:auto;padding:40px 20px 64px}h1{font-size:32px;line-height:1.3;margin:8px 0 16px}h2{font-size:20px;margin:28px 0 8px}p{margin:10px 0}a{color:#a8c7fa}.card{padding:22px;background:#292a2d;border:1px solid #454746;border-radius:20px;margin:22px 0}.cta{display:block;background:#a8c7fa;color:#062e6f;border-radius:30px;text-decoration:none;text-align:center;font-weight:700;padding:14px 18px;margin:18px 0}.muted{color:#c4c7c5}.badge{color:#a8c7fa;font-weight:600}code{overflow-wrap:anywhere;font-size:14px}li{margin:9px 0}ol{padding-left:24px}summary{cursor:pointer}button{font:inherit;background:transparent;color:#a8c7fa;border:1px solid #7c8189;padding:7px 15px;border-radius:22px;cursor:pointer;margin-top:10px}:focus-visible{outline:3px solid #a8c7fa;outline-offset:4px}footer{margin-top:32px;font-size:14px}</style></head>
+<body><main><p class="badge">先行テスト版 · 0.4.0-beta.20</p><h1>MenuTool</h1>
+<p class="muted">アバターのメニュー整理と、パーツをまとめて出し入れするトグルの作成。</p>
+<div class="card"><h2 style="margin-top:0">テスト用プロジェクトに導入</h2>
+<p>普段のプロジェクトを複製するか、新しいアバタープロジェクトを用意してください。旧Assets版MenuToolが入ったプロジェクトへの重複導入は避けてください。</p>
+<a class="cta" href="vcc://vpm/addRepo?url=https%3A%2F%2Fhoricraft.github.io%2Fvpm%2Fmenutool-test%2Findex.json">VCCに追加</a>
+<ol><li>VCCの確認画面でリポジトリを追加します。</li><li>VCCの Settings → Packages → <b>Show Pre-Release Packages</b> をオンにします。</li><li>更新する場合はMenuToolのウィンドウを閉じてからUnityを終了し、テスト用プロジェクトの Manage Project から MenuTool <b>0.4.0-beta.20</b> を追加します。</li><li>Unityを開き、HoriCraft → MenuTool から起動します。編集には、別途受け取ったMenuTool専用の解除キーを入力してください。</li></ol>
+<details><summary>ALCOMで追加する／ボタンが開かない場合</summary><p>リポジトリの追加画面に、次のURLを貼り付けてください。</p><code id="repo">https://horicraft.github.io/vpm/menutool-test/index.json</code><br><button id="copy" type="button">URLをコピー</button><p id="status" role="status"></p><p>先行リリースが表示されない場合は、プレリリースの表示設定を確認してください。</p></details></div>
+<h2>必要な環境</h2><p>Unity 2022.3、VRChat SDK Avatars、Modular Avatar、NDMF。依存パッケージが見つからない場合は、<a href="https://vpm.nadena.dev/">Modular Avatar / NDMFのリポジトリ</a>も追加してください。</p>
+<h2>試してほしいこと</h2><p>対象アバターの選択、メニューの仕分け・並び替え、複数パーツを1つのトグルで出し入れする操作、設定からの復元。困った操作があれば、版番号と操作した項目名を添えて、リンクを送った相手へ教えてください。</p>
+<h2>この配布について</h2><p>正式版・販売開始ではありません。本体は公開ダウンロードできますが、解除キーは同梱していません。処理部分はDLLで配布し、既存データとの互換性に必要な定義ファイルを同梱しています。</p><p>自動バックアップはMenuToolが扱うメニュー設定の復元用です。プロジェクト全体のバックアップにはなりません。</p>
+<footer class="muted">© HoriCraft · <a href="https://vcc.docs.vrchat.com/vpm/packages/#prerelease-packages">VCCのプレリリース表示について</a></footer>
+</main><script>document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById('repo').textContent);document.getElementById('status').textContent='コピーしました';}catch{document.getElementById('status').textContent='上のURLを選択してコピーしてください';}});</script></body></html>
