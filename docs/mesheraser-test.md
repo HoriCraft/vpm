@@ -2,8 +2,8 @@
 
 - Guide: https://horicraft.github.io/vpm/mesheraser-test/
 - VPM repository: https://horicraft.github.io/vpm/mesheraser-test/index.json
-- Package: `com.horicraft.mesh-eraser`, `1.1.0-beta.5`
-- GitHub prerelease: `mesheraser-v1.1.0-beta.5`
+- Package: `com.horicraft.mesh-eraser`, `1.1.0-beta.6`
+- GitHub prerelease: `mesheraser-v1.1.0-beta.6`
 
 This is a separate opt-in test repository. It does not add MeshEraser to the stable HoriCraft listing or change the existing TexSlim/Katachia routes. Do not add HoriCraft/vpm to sources.json: its releases contain multiple products.
 
@@ -11,13 +11,13 @@ Use a test avatar project without an old Assets installation. Enable **Show Pre-
 
 The package contains the common trial/purchased implementation, without an unlock key. Buyers retain their private key document. Legacy product-file authentication and migration of an Assets installation are separate operations. Never publish buyer documents, unlock keys, development helpers or private project data in this repository or its releases.
 
-Beta.5 is based on the exact published beta.4 archive. New toggle assets use `Assets/HoriCraft/MeshEraser/Generated/`; existing assets under `Assets/HoriCraft/MeshEraser_Generated/` are neither moved nor deleted. Normal reads retain serialized references. The hidden bake feature recognizes both roots. The folder creator makes missing parent folders and stops if the new root cannot be created.
+Beta.6 is based on the exact published beta.5 archive. It removes the normal Inspector raw-data foldout, adds an isolated Undo transaction around generation and its Done caller, validates created/saved assets, and changes start-state editing to locate the unique named Bool. Missing, ambiguous or wrong-type parameters stop without changing another setting. Initial-state Component cache edits are in the same transaction as the MA edits.
 
-Only MaSceneBackend.cs, BakeBackend.cs, the fallback version in MeshEraserWindow.cs and package.json change. The other 98 files, all metadata/GUIDs, Runtime, authentication, paint data and build passes are byte-identical to beta.4. Archive: 373536 bytes; SHA256 `9f11000285656c7b75fe6f607fa1d2317ff2c21cd49e8dd38c5098c416b7e6b6`. The unchanged 102-file tester package policy excludes unfinished terms, CHANGELOG and obsolete migration guides; no buyer key is present.
+Only MaSceneBackend.cs, MeshEraserComponentEditor.cs, MeshEraserWindow.Step3.cs, the fallback version in MeshEraserWindow.cs and package.json change. The other 97 files, all metadata/GUIDs, Runtime and license code are byte-identical to beta.5. Archive: 374442 bytes, SHA256 `0b579195bb1d443785a1bfc83f8c70dbe79cbb6ba81c9f5ff230fa7b4290ac5f`; all 102 files verified, no buyer key. The established test package omits unfinished terms, changelog and obsolete migration guides.
 
-Three compile profiles passed. Eleven extracted-C# method checks use an in-memory AssetDatabase substitute. Five file-level migration/restore checks preserve new/old generated files and metadata; fixture-only project/process guards differ from production, and multi-version manifests remain harness-only. No Unity/ALCOM installation, save/reload, menu behavior or native migration has been tested for beta.5. The owner will update through ALCOM and perform native checks after publication. Never delete the entire legacy product folder: it can contain generated/user data. Automatic migration is not included.
+Three compile profiles and 25 regressions using extracted actual methods/caller with in-memory Undo/AssetDatabase/controller substitutes passed. Generation integration is checked statically. These are not native Unity tests. The owner will update through ALCOM and check Inspector, normal generation, parameter reordering, Undo/Redo and save/reload. A controlled failure test must use an independent copy; do not break a working project's files or fill the disk. New unreferenced files/empty folders may remain after failure; originals are not deleted. A rollback failure is surfaced rather than claimed successful.
 
-Beta.1, beta.3 and beta.4 remain available with unchanged entries and downloads. Beta.4's earlier owner feedback covers H/C, paint/settings/references and Scene selection; it does not establish beta.5 acceptance. Existing users refresh the same Public Test repository; no new registration is needed.
+Beta.5's new generated path remains `Assets/HoriCraft/MeshEraser/Generated/`, with old `MeshEraser_Generated/` references retained. Earlier beta.5 owner acceptance is historical evidence, not beta.6 acceptance. Beta.1/3/4/5 entries and downloads remain unchanged. Automatic UnityPackage migration is not included.
 
 ## Verification and publication
 
