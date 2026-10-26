@@ -37,6 +37,22 @@
           "vpmDependencies": {},
           "zipSHA256": "e2f94921723801bc91cc04ebc1f9a2f8c9610f57ae7f67011c4a35e318540c71",
           "repo": "https://horicraft.github.io/vpm/booth-library-unity/index.json"
+        },
+        "0.3.0-preview.3": {
+          "name": "com.horicraft.booth-library-unity",
+          "displayName": "HoriCraft Asset Catalog",
+          "version": "0.3.0-preview.3",
+          "url": "https://github.com/HoriCraft/vpm/releases/download/booth-library-unity-v0.3.0-preview.3/com.horicraft.booth-library-unity-0.3.0-preview.3.zip",
+          "unity": "2022.3",
+          "license": "MIT",
+          "description": "An unofficial Unity Editor extension by HoriCraft that connects to BOOTH Library Manager to browse products and link imported assets.",
+          "author": {
+            "name": "HoriCraft",
+            "email": "h.sorevolu@gmail.com"
+          },
+          "vpmDependencies": {},
+          "zipSHA256": "ac3bc32531a7ebdaf13e97224bf6b195645b1e655af6ae9e60f2a0c6d9b7c8bd",
+          "repo": "https://horicraft.github.io/vpm/booth-library-unity/index.json"
         }
       }
     }
