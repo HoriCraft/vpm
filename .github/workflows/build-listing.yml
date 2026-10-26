@@ -194,7 +194,7 @@ jobs:
           mkdir -p _site/menutool-test
           cp -R site/menutool-test/. _site/menutool-test/
 
-      - name: BOOTH Library for Unity の案内を追加する
+      - name: HoriCraft Asset Catalog の案内を追加する
         run: |
           mkdir -p _site/booth-library-unity
           cp -R site/booth-library-unity/. _site/booth-library-unity/
