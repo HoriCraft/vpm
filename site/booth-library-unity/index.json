@@ -1,0 +1,28 @@
+{
+  "name": "HoriCraft BOOTH Library for Unity",
+  "id": "com.horicraft.booth-library-unity.vpm",
+  "author": "HoriCraft",
+  "url": "https://horicraft.github.io/vpm/booth-library-unity/index.json",
+  "packages": {
+    "com.horicraft.booth-library-unity": {
+      "versions": {
+        "0.3.0-preview.1": {
+          "name": "com.horicraft.booth-library-unity",
+          "displayName": "BOOTH Library for Unity",
+          "version": "0.3.0-preview.1",
+          "url": "https://github.com/HoriCraft/vpm/releases/download/booth-library-unity-v0.3.0-preview.1/com.horicraft.booth-library-unity-0.3.0-preview.1.zip",
+          "unity": "2022.3",
+          "license": "MIT",
+          "description": "Browse BOOTH Library Manager products in the Unity Editor and associate imported assets with their BOOTH pages.",
+          "author": {
+            "name": "HoriCraft",
+            "email": "h.sorevolu@gmail.com"
+          },
+          "vpmDependencies": {},
+          "zipSHA256": "15cd1ba5675ded2cef4ccf0896a66dbdf1213d1fd066ae397021a58dbaeb2716",
+          "repo": "https://horicraft.github.io/vpm/booth-library-unity/index.json"
+        }
+      }
+    }
+  }
+}
