@@ -10,17 +10,19 @@
 <div class="brand">HORICRAFT</div>
 <h1>HoriCraft<br>Asset Catalog</h1>
 <p>BOOTH Library Managerと連携する非公式のUnity Editor拡張です。商品画像、タグ、商品ページ、取り込んだアセットをつなぎます。</p>
-<div class="version">0.3.0-preview.3 · Windows · Unity 2022.3 · MIT</div>
+<div class="version">0.3.0-preview.4 · Windows · Unity 2022.3 · MIT</div>
 <div class="actions">
 <a class="button" href="vcc://vpm/addRepo?url=https%3A%2F%2Fhoricraft.github.io%2Fvpm%2Fbooth-library-unity%2Findex.json">VCC / ALCOM に追加</a>
-<a class="button secondary" href="https://github.com/HoriCraft/vpm/releases/download/booth-library-unity-v0.3.0-preview.3/com.horicraft.booth-library-unity-0.3.0-preview.3.zip">ZIPをダウンロード</a>
+<a class="button secondary" href="https://github.com/HoriCraft/vpm/releases/download/booth-library-unity-v0.3.0-preview.4/com.horicraft.booth-library-unity-0.3.0-preview.4.zip">ZIPをダウンロード</a>
 </div>
 <section><h2>使い始める</h2>
 <ol><li>VCC / ALCOMにリポジトリを追加し、先行版パッケージの表示を有効にします。</li><li>プロジェクトに <b>HoriCraft Asset Catalog</b> を追加します。</li><li>Unityの <b>HoriCraft → Asset Catalog</b> を開きます。</li></ol>
 <details><summary>リポジトリURLを手動で追加する</summary><p><code>https://horicraft.github.io/vpm/booth-library-unity/index.json</code></p></details>
+<details><summary>BOOTH Library Managerのデータが見つからないとき</summary><p>Asset Catalog上部の「BOOTH Library Managerのデータ」を開き、「標準の場所を使う」を押します。手動で選ぶファイルは、BOOTH Library Managerの管理ファイル <code>data.db</code> です。</p><p>標準の場所: <code>%APPDATA%\pm.booth.library-manager\data.db</code></p><p>「場所をコピー」でパスをコピーし、「data.db を選ぶ…」のファイル名欄へ貼り付けても開けます。BOOTH Library Managerをまだ使っていない場合は、一度起動して商品を登録してください。DBは読み取り専用で参照します。</p></details>
 <details><summary>ZIPから導入する</summary><p>ZIPを展開し、中身をプロジェクトの <code>Packages/com.horicraft.booth-library-unity/</code> に置きます。<code>package.json</code> がこのフォルダーの直下にある状態にしてください。</p></details></section>
-<section><h2>パッケージを取り込む</h2><p>商品詳細の「BLMの保存先」からエクスプローラーを開き、目的の <code>.unitypackage</code> をダブルクリックします。Unity標準の取り込み画面で取り込みを実行すると、商品との照合が始まります。Unityの「Import Package」からの取り込みにも対応します。</p></section>
-<section><h2>データの扱い</h2><p>BLMのローカルDBを読み取り専用で参照します。商品画像はDBに記録されたURLから取得し、Unityタグとアセットの対応表は別ファイルへ保存します。BLMの手動リストとタグは表示・検索でき、Unityタグを追加できます。スマートリストとBLMへの書き戻しは現在未対応です。</p><p>Unity 2022.3.22f1で動作確認済みです。Unity 6は未検証です。</p></section>
-<footer>BOOTH Library Manager・BOOTHの非公式連携ツールです。<br><a href="https://github.com/HoriCraft/vpm/releases/tag/booth-library-unity-v0.3.0-preview.3">リリースと同梱説明書</a> · <a href="https://horicraft.booth.pm/">HoriCraft</a></footer>
+<section><h2>パッケージを取り込む</h2><p>商品詳細の「エクスプローラーで開く」からエクスプローラーを開き、目的の <code>.unitypackage</code> をダブルクリックします。Unity標準の取り込み画面で取り込みを実行すると、商品を照合し、一つに確定したらアセットを紐づけ、商品画像もAssetsへ自動保存します。Unityの「Import Package」からの取り込みにも対応します。</p></section>
+<section><h2>探す・開く</h2><p>カテゴリ・ショップ・リスト・複数タグ・プロジェクトへの登録状態で絞り込めます。タグは「すべて含む／いずれかを含む」を切り替えられます。「Assetsで開く」で紐づいた商品フォルダーをUnityのProject欄に表示します。</p><p>すでに導入済みの商品は、Projectでフォルダーを選び「選択フォルダーをこの商品に登録」を押します。商品画像も保存します。画像保存に失敗しても紐づけは維持し、再試行できます。既存の画像は上書きしません。</p></section>
+<section><h2>データの扱い</h2><p>BOOTH Library ManagerのローカルDBを読み取り専用で参照します。商品画像はDBに記録されたURLから取得し、Unityタグとアセットの対応表は別ファイルへ保存します。BOOTH Library Managerの手動リストとタグは表示・検索でき、Unityタグを追加できます。スマートリストとBOOTH Library Managerへの書き戻しは現在未対応です。</p><p>Unity 2022.3.22f1で動作確認済みです。Unity 6は未検証です。</p></section>
+<footer>BOOTH Library Manager・BOOTHの非公式連携ツールです。<br><a href="https://github.com/HoriCraft/vpm/releases/tag/booth-library-unity-v0.3.0-preview.4">リリースと同梱説明書</a> · <a href="https://horicraft.booth.pm/">HoriCraft</a></footer>
 </main>
 </html>
