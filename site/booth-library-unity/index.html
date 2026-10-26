@@ -1,28 +1,2 @@
 <!doctype html>
-<html lang="ja">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HoriCraft Asset Catalog | HoriCraft</title>
-<style>
-*{box-sizing:border-box}body{margin:0;background:#142329;color:#eef5ef;font-family:system-ui,"Yu Gothic UI",sans-serif;line-height:1.8}main{max-width:860px;margin:auto;padding:72px 24px}h1{font-size:clamp(32px,7vw,54px);line-height:1.2;margin:12px 0 24px}p{color:#c6d9d3}.brand{color:#8bd0b7;letter-spacing:.12em}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0}.button{padding:13px 23px;border-radius:8px;color:#153229;background:#8bd0b7;text-decoration:none;font-weight:700}.secondary{color:#eaf3ed;background:#31484e}section{margin-top:40px;padding-top:20px;border-top:1px solid #496168}h2{font-size:22px}a{color:#a1dfc8}code{overflow-wrap:anywhere}li{margin:10px 0}.version{font-size:16px;color:#a1b8b3}footer{margin-top:48px;color:#9ab4ac;font-size:14px}
-</style>
-<main>
-<div class="brand">HORICRAFT</div>
-<h1>HoriCraft<br>Asset Catalog</h1>
-<p>BOOTH Library Managerと連携する非公式のUnity Editor拡張です。商品画像、タグ、商品ページ、取り込んだアセットをつなぎます。</p>
-<div class="version">0.3.0-preview.5 · Windows · Unity 2022.3 · MIT</div>
-<div class="actions">
-<a class="button" href="vcc://vpm/addRepo?url=https%3A%2F%2Fhoricraft.github.io%2Fvpm%2Fbooth-library-unity%2Findex.json">VCC / ALCOM に追加</a>
-<a class="button secondary" href="https://github.com/HoriCraft/vpm/releases/download/booth-library-unity-v0.3.0-preview.5/com.horicraft.booth-library-unity-0.3.0-preview.5.zip">ZIPをダウンロード</a>
-</div>
-<section><h2>使い始める</h2>
-<ol><li>VCC / ALCOMにリポジトリを追加し、先行版パッケージの表示を有効にします。</li><li>プロジェクトに <b>HoriCraft Asset Catalog</b> を追加します。</li><li>Unityの <b>HoriCraft → Asset Catalog</b> を開きます。</li></ol>
-<details><summary>リポジトリURLを手動で追加する</summary><p><code>https://horicraft.github.io/vpm/booth-library-unity/index.json</code></p></details>
-<details><summary>BOOTH Library Managerのデータが見つからないとき</summary><p>Asset Catalog上部の「BOOTH Library Managerのデータ」を開き、「標準の場所を使う」を押します。手動で選ぶファイルは、BOOTH Library Managerの管理ファイル <code>data.db</code> です。</p><p>標準の場所: <code>%APPDATA%\pm.booth.library-manager\data.db</code></p><p>「場所をコピー」でパスをコピーし、「data.db を選ぶ…」のファイル名欄へ貼り付けても開けます。BOOTH Library Managerをまだ使っていない場合は、一度起動して商品を登録してください。DBは読み取り専用で参照します。</p></details>
-<details><summary>ZIPから導入する</summary><p>ZIPを展開し、中身をプロジェクトの <code>Packages/com.horicraft.booth-library-unity/</code> に置きます。<code>package.json</code> がこのフォルダーの直下にある状態にしてください。</p></details></section>
-<section><h2>パッケージを取り込む</h2><p>商品詳細の「エクスプローラーで開く」で商品フォルダーの中身を直接開き、目的の <code>.unitypackage</code> をダブルクリックします。Unity標準の取り込み画面で取り込みを実行すると、商品を照合し、一つに確定したらアセットを紐づけ、商品画像もAssetsへ自動保存します。Unityの「Import Package」からの取り込みにも対応します。</p></section>
-<section><h2>探す・開く</h2><p>「フィルタ」でカテゴリ・サブカテゴリ・年齢制限・タグを選べます。ショップ・リスト・プロジェクトへの登録状態も組み合わせられます。タグは「すべて含む／いずれかを含む」を切り替えられます。「Assetsで開く」で紐づいた商品フォルダーをUnityのProject欄に表示します。</p><p>すでに導入済みの商品は、Projectでフォルダーを選び「選択フォルダーをこの商品に登録」を押します。商品画像も保存します。画像保存に失敗しても紐づけは維持し、再試行できます。既存の画像は上書きしません。</p></section>
-<section><h2>データの扱い</h2><p>BOOTH Library ManagerのローカルDBを読み取り専用で参照します。商品画像はDBに記録されたURLから取得し、Unityタグとアセットの対応表は別ファイルへ保存します。BOOTH Library Managerの手動リストとタグは表示・検索でき、Unityタグを追加できます。スマートリストとBOOTH Library Managerへの書き戻しは現在未対応です。</p><p>Unity 2022.3.22f1で動作確認済みです。Unity 6は未検証です。</p></section>
-<footer>BOOTH Library Manager・BOOTHの非公式連携ツールです。<br><a href="https://github.com/HoriCraft/vpm/releases/tag/booth-library-unity-v0.3.0-preview.5">リリースと同梱説明書</a> · <a href="https://horicraft.booth.pm/">HoriCraft</a></footer>
-</main>
-</html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HoriCraft Asset Catalog — 配布準備中</title><style>body{font-family:system-ui,sans-serif;max-width:46rem;margin:12vh auto;padding:24px;line-height:1.9;background:#f5f7f5;color:#23382f}h1{font-size:1.8rem}</style><main><h1>HoriCraft Asset Catalog</h1><p>旧プレビュー版の配布を終了しました。現在、有料版の配布を準備しています。</p><p>新しい導入先は準備が整い次第ご案内します。導入済みのプレビュー版を自動で削除することはありません。</p></main></html>
