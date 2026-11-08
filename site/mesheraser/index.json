@@ -1,0 +1,74 @@
+{
+  "name": "HoriCraft MeshEraser",
+  "id": "com.horicraft.mesh-eraser.vpm",
+  "author": "HoriCraft",
+  "url": "https://horicraft.github.io/vpm/mesheraser/index.json",
+  "packages": {
+    "com.horicraft.mesh-eraser": {
+      "versions": {
+        "1.1.0": {
+          "name": "com.horicraft.mesh-eraser",
+          "displayName": "MeshEraser",
+          "version": "1.1.0",
+          "unity": "2022.3",
+          "description": "VRChatアバター用・ブラシ操作メッシュ削除ツール。SceneView上で消しゴム感覚で塗って、ビルド時に非破壊でポリゴンを削除する。",
+          "author": {
+            "name": "HoriCraft"
+          },
+          "vpmDependencies": {
+            "nadena.dev.ndmf": ">=1.4.0 <2.0.0"
+          },
+          "legacyFiles": {
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\ed2dc7861982f1ca3628428f495e89fa": "ed2dc7861982f1ca3628428f495e89fa",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\d16f11fbe94c0e4907ccf245187f5af8": "d16f11fbe94c0e4907ccf245187f5af8",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\b375bd1dbfa8044acdba9fdef03623e3": "b375bd1dbfa8044acdba9fdef03623e3",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\d3fdc6c6c2160fec186304d7cd428652": "d3fdc6c6c2160fec186304d7cd428652",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\e07fe3d2adacd27a323e9eda27536520": "e07fe3d2adacd27a323e9eda27536520",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\2e5edc655e12d16aba58961b80e0851a": "2e5edc655e12d16aba58961b80e0851a",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\4413953971d31e9d87e2308ad8503d5b": "4413953971d31e9d87e2308ad8503d5b",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\a8bf4cb63080453e55f438a8bc71f320": "a8bf4cb63080453e55f438a8bc71f320",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\ed4d6431e025f428c5e7b779f7f4ac8f": "ed4d6431e025f428c5e7b779f7f4ac8f",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\402cda9e86e6b33bfe77d249bbe2c557": "402cda9e86e6b33bfe77d249bbe2c557",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\d5dbaf299b088a97f7087c7d8d2c0e50": "d5dbaf299b088a97f7087c7d8d2c0e50",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\3822619e7d157ea39c66d81ac3641e1d": "3822619e7d157ea39c66d81ac3641e1d",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\ce8e3c3a9586a333eb5934132777bd9a": "ce8e3c3a9586a333eb5934132777bd9a",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\31a03eea89b9ca3bc2471c1b8030209d": "31a03eea89b9ca3bc2471c1b8030209d",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\3ced0e8446fe5ee892a7cb4b000405e0": "3ced0e8446fe5ee892a7cb4b000405e0",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\90f270259958491a219ee80cae3f916a": "90f270259958491a219ee80cae3f916a",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\94bc5a3b2f600e9fc176985528f45c00": "94bc5a3b2f600e9fc176985528f45c00",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\b98d596f27d15479fd74a34653f2d64d": "b98d596f27d15479fd74a34653f2d64d",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\173845429f58816af77d1d64125ad6f0": "173845429f58816af77d1d64125ad6f0",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\ba2467e742474839851a14a416230bf8": "ba2467e742474839851a14a416230bf8",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\c97beca5424173dafcbabaa76600d83b": "c97beca5424173dafcbabaa76600d83b",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\273d061c2f7298c118f302e2474ccc0a": "273d061c2f7298c118f302e2474ccc0a",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\d5f96696122243780d72165707949eb7": "d5f96696122243780d72165707949eb7",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\5a26f6bf61dcffa0b4d839a370a83abc": "5a26f6bf61dcffa0b4d839a370a83abc",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\353af998d4ab77d7c897f67b86995b79": "353af998d4ab77d7c897f67b86995b79",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\c8c1f978e9b89f80310e26732e8da94a": "c8c1f978e9b89f80310e26732e8da94a",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\de214b6cdcd574f787138ddd9dd897a4": "de214b6cdcd574f787138ddd9dd897a4",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\c620cf2dde7bfd62d760b36691984238": "c620cf2dde7bfd62d760b36691984238",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\9c8b6cf0d10971ebbc9dc31045115580": "9c8b6cf0d10971ebbc9dc31045115580",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\89914fda852feb445147c39e30082f62": "89914fda852feb445147c39e30082f62",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\8215275ee392b5ad8056ce5814ff604d": "8215275ee392b5ad8056ce5814ff604d",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\7af00a471be22b59a2d8604ea50930dd": "7af00a471be22b59a2d8604ea50930dd",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\9c0723924baf5c855be11ebeac3c070b": "9c0723924baf5c855be11ebeac3c070b",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\f6b6fb1f4280639a1b575a4123cbd3f1": "f6b6fb1f4280639a1b575a4123cbd3f1",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\864d77736277807a5ef9e511b6cf0b24": "864d77736277807a5ef9e511b6cf0b24",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\1ad699f1bc31380f822abd8938f83c4d": "1ad699f1bc31380f822abd8938f83c4d",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\042750cb0b6fd6b9682788b2aad70295": "042750cb0b6fd6b9682788b2aad70295",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\17f67858e7505bc80b7a407615f8720e": "17f67858e7505bc80b7a407615f8720e",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\66eea006c7fb4ddeaf21a6b82592d722": "66eea006c7fb4ddeaf21a6b82592d722",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\59800bdfe5c3e19acfcd20f7a26006c7": "59800bdfe5c3e19acfcd20f7a26006c7",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\79f86dd2b9351f133d5bc33615c68389": "79f86dd2b9351f133d5bc33615c68389",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\0b2b291f39c6407bb66b46513d8688ef": "0b2b291f39c6407bb66b46513d8688ef",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\9f9b76a943d0a2f2a5a59541b2494e08": "9f9b76a943d0a2f2a5a59541b2494e08",
+            "Assets\\.HoriCraft-MeshEraser-LegacyLookup\\86e0612c8c450b2cb8f459e4218f6a1c": "86e0612c8c450b2cb8f459e4218f6a1c"
+          },
+          "url": "https://github.com/HoriCraft/vpm/releases/download/mesheraser-v1.1.0/com.horicraft.mesh-eraser-1.1.0.zip",
+          "zipSHA256": "d15ff2db1600c4d9f01bac34d2948c26462f990fb7e5f5ec23639dea1171b7a2",
+          "repo": "https://horicraft.github.io/vpm/mesheraser/index.json"
+        }
+      }
+    }
+  }
+}

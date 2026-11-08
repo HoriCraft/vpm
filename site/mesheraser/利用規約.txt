@@ -1,0 +1,222 @@
+﻿MeshEraser 利用規約
+規約版：2026-11-08
+対象：製品v1.1.0の正式提供分。適用は第1条に従います。
+
+1. この規約の対象
+この規約は、hori／HoriCraft（以下「作者」）が提供するMeshEraserの利用条件です。本体、作者が権利を持つソースコード、同梱ツール・資料を「本製品」とします。
+本規約は、施行日以降に本規約に基づいて成立する利用許諾契約に適用します。対象となる版と利用条件を取得・利用前に案内します。本規約を確認し、同意のうえでご利用ください。
+
+2. 利用許諾
+製品版の購入代金は、本規約に定める条件で製品版機能を利用するための、非独占的な利用許諾の対価です。本製品の著作権その他の知的財産権を譲渡するものではありません。
+製品版機能を使用する人ごとに利用権を購入してください。購入者本人は、自分が使う複数のPC・プロジェクトで利用できます。作者が別途個別に許諾した場合は、その条件に従います。
+無料お試し版は、提供されている試用機能の範囲で利用できます。
+
+3. 成果物の利用・販売・納品
+本製品を使ったアバター等の制作・改変、有償の制作作業、成果物の販売・配布、動画配信などの商用・非商用利用を許可します。個人・法人を問いません。
+成果物には、加工したアバター、メッシュ、画像、アニメーション、シーン、Prefab、利用者が作成した設定データ等が含まれます。本製品の本体・ソースコード・解除キー・認証情報は含まれません。
+成果物を受け取るだけの依頼者は利用権の購入は不要です。依頼者自身が製品版機能を使う場合は、依頼者も利用権を購入してください。
+第4条の例外に当たる場合を除き、本製品の本体・ソースコード・解除キー・認証情報を納品物に含めないでください。再編集に本製品が必要な場合、受取側は公式配布元から別途取得してください。
+
+4. 禁止すること
+法令上認められる利用、第三者ライセンスに基づく利用、作者の個別許諾を除き、次の行為を禁止します。
+・本製品の全部または一部を無断転載・再配布・転売すること。
+・作者が権利を持つコードを複製・流用し、改変の有無を問わず、別のツール・アセット等へ組み込んで配布・販売すること。有料・無料を問いません。
+・解除キーの文字列、キーを含むファイル・パッケージ、認証情報を第三者へ渡す、公開する、共有する、転売すること。
+・製品版の利用条件を回避する目的で、判定機能を改変・無効化すること、その回避を目的とするプログラムや手順を公開・配布すること。
+・本製品を自分がゼロから開発したと偽ること。
+本製品のコードを複製・流用せず独立して開発したプログラムや、一般的な知識・アイデアの利用は制限しません。
+
+5. 元の素材と第三者の権利
+アバター・衣装などの編集対象には、各権利者の利用規約に従ってください。本規約は、それらの素材の改変・販売・再配布を別途許可するものではありません。
+第三者のライセンスが付いたコードや依存ツールには、それぞれのライセンスが適用されます。本規約でその許諾を制限しません。
+本製品のうち作者が権利を持つ部分の著作権は作者に帰属します。
+
+6. 更新と有効化
+機能・画面・対応環境の変更は更新内容として案内します。将来の機能や公開時期を約束するものではありません。
+製品版の有効化に外部の認証サーバーは使用しません。有効化状態はPC内に保存されます。本体の取得・更新や、BOOTH等のページを開く際の通信は別です。
+
+7. 返品・返金と不具合への対応
+本製品はデジタル形式で提供するソフトウェアです。購入者都合による購入後のキャンセル・返品・返金は受け付けません。購入前に動作環境と無料お試し版をご確認ください。
+すべての環境や他ツールとの組合わせでの動作を保証するものではありません。予期しない不具合に備え、作業前にプロジェクトをバックアップしてください。
+作者は適用法令に従って責任を負います。本条は、作者の債務不履行などを理由に法令上認められる解除・返金・損害賠償等の権利を制限しません。
+不具合や購入に関する相談は、BOOTHのショップメッセージへお寄せください。
+
+8. 規約の変更
+規約を変更する場合は、変更内容、対象となる版、効力発生日を配布ページ等で案内します。
+契約内容の変更は、必要な同意その他の法令上の要件に従って行います。
+
+9. 準拠法・相談窓口
+本規約は日本法に従って解釈します。紛争の管轄は法令の定めによります。
+相談窓口：BOOTHのHoriCraftショップメッセージ
+https://horicraft.booth.pm/items/8693979
+
+作成者：hori／HoriCraft
+施行日：2026年11月8日
+
+
+MeshEraser Terms of Use
+Terms version: 2026-11-08
+Scope: the official release of product v1.1.0. Applicability is governed by Article 1.
+
+1. Scope of These Terms
+These Terms set out the conditions for using MeshEraser, provided by hori / HoriCraft (the “Author”). The software, source code in which the Author holds rights, and accompanying tools and documentation are collectively referred to as the “Product”.
+These Terms apply to license agreements entered into under these Terms on or after their effective date. The applicable versions and conditions of use will be presented before acquisition or use. Please read and agree to these Terms before using the Product.
+
+2. License
+The purchase price of the full version is consideration for a non-exclusive license to use the full-version features under these Terms. It does not transfer copyright or other intellectual property rights in the Product.
+Each person who uses the full-version features must purchase a license. Purchasers may use the Product on multiple PCs and in multiple projects that they themselves use. If the Author grants separate individual permission, that permission's conditions apply.
+The free trial may be used within the trial features provided.
+
+3. Use, Sale, and Delivery of Your Work
+You may use the Product to create or modify avatars and other work, perform paid production work, sell or distribute the resulting work, stream videos, and engage in other commercial or non-commercial uses. This permission applies to both individuals and organizations.
+The resulting work includes processed avatars, meshes, images, animations, scenes, Prefabs, and configuration data created by users. It does not include the Product's software, source code, unlock keys, or authentication information.
+Clients who only receive the resulting work do not need to purchase a license. If clients themselves use the full-version features, they must also purchase a license.
+Except where an exception under Article 4 applies, do not include the Product's software, source code, unlock keys, or authentication information in deliverables. If the Product is needed for further editing, the recipient must obtain it separately from an official distribution source.
+
+4. Prohibited Conduct
+Except for uses permitted by law, uses authorized by third-party licenses, or individual permission from the Author, the following conduct is prohibited:
+• Reproducing for publication, redistributing, or reselling all or part of the Product without authorization.
+• Copying or reusing code in which the Author holds rights and incorporating it into other tools, assets, or similar products for distribution or sale, whether modified or unmodified, and whether paid or free.
+• Giving, publishing, sharing, or reselling unlock-key strings, files or packages containing keys, or authentication information to third parties.
+• Modifying or disabling the license-checking functionality for the purpose of circumventing the conditions for using the full version, or publishing or distributing programs or instructions intended for such circumvention.
+• Falsely claiming that you developed the Product from scratch.
+These Terms do not restrict independently developed programs that do not copy or reuse the Product's code, or the use of general knowledge or ideas.
+
+5. Original Assets and Third-Party Rights
+When editing avatars, outfits, or other assets, follow the terms of their respective rights holders. These Terms do not separately authorize modification, sale, or redistribution of those assets.
+Code and dependencies covered by third-party licenses remain subject to their respective licenses. These Terms do not restrict the permissions granted under those licenses.
+Copyright in the portions of the Product in which the Author holds rights belongs to the Author.
+
+6. Updates and Activation
+Changes to features, screens, and supported environments will be announced in the update information. This does not constitute a promise of future features or release dates.
+An external authentication server is not used to activate the full version. Activation status is stored on the PC. Network access used to obtain or update the software, or to open pages such as BOOTH, is separate.
+
+7. Returns, Refunds, and Problems
+The Product is software provided in digital form. Post-purchase cancellations, returns, and refunds for the purchaser's own convenience are not accepted. Please check the system requirements and the free trial before purchasing.
+Operation in every environment or combination with other tools is not guaranteed. Back up your project before starting work in case of unexpected problems.
+The Author bears responsibility in accordance with applicable law. This Article does not restrict rights to terminate the agreement, receive a refund, claim damages, or exercise other remedies recognized by law, including those arising from the Author's failure to perform contractual obligations.
+For problems or questions about purchases, please contact the shop through BOOTH messages.
+
+8. Changes to These Terms
+If these Terms are changed, the changes, applicable versions, and effective date will be announced on the distribution page or similar channels.
+Changes to contractual terms will be made in accordance with any required consent and other legal requirements.
+
+9. Governing Law and Contact
+These Terms are interpreted in accordance with Japanese law. Jurisdiction over disputes is determined by applicable law.
+Contact: HoriCraft shop messages on BOOTH
+https://horicraft.booth.pm/items/8693979
+
+Author: hori / HoriCraft
+Effective date: November 8, 2026
+
+
+MeshEraser 이용약관
+약관 버전: 2026-11-08
+대상: 제품 v1.1.0의 정식 제공분. 적용 범위는 제1조에 따릅니다.
+
+1. 본 약관의 대상
+본 약관은 hori / HoriCraft(이하 “제작자”)가 제공하는 MeshEraser의 이용 조건을 정합니다. 프로그램 본체, 제작자가 권리를 보유한 소스 코드, 동봉된 도구와 자료를 통틀어 “본 제품”이라 합니다.
+본 약관은 시행일 이후 본 약관에 따라 체결되는 이용허락 계약에 적용됩니다. 대상 버전과 이용 조건은 취득 또는 이용 전에 안내합니다. 본 약관을 확인하고 동의한 후 이용해 주세요.
+
+2. 이용허락
+제품판의 구매 대금은 본 약관에 정해진 조건에 따라 제품판 기능을 이용하기 위한 비독점적 이용허락의 대가입니다. 본 제품의 저작권이나 그 밖의 지식재산권을 양도하는 것은 아닙니다.
+제품판 기능을 사용하는 사람마다 이용권을 구매해 주세요. 구매자 본인은 자신이 사용하는 여러 PC와 프로젝트에서 이용할 수 있습니다. 제작자가 별도로 개별 허락한 경우에는 해당 조건에 따릅니다.
+무료 체험판은 제공되는 체험 기능의 범위에서 이용할 수 있습니다.
+
+3. 결과물의 이용·판매·납품
+본 제품을 사용한 아바타 등의 제작·개변, 유상 제작 작업, 결과물의 판매·배포, 동영상 방송 등 상업적·비상업적 이용을 허용합니다. 개인과 법인 모두 해당합니다.
+결과물에는 가공한 아바타, 메시, 이미지, 애니메이션, 씬, Prefab, 이용자가 작성한 설정 데이터 등이 포함됩니다. 본 제품의 프로그램 본체·소스 코드·해제 키·인증 정보는 포함되지 않습니다.
+결과물을 받기만 하는 의뢰인은 이용권을 구매할 필요가 없습니다. 의뢰인이 직접 제품판 기능을 사용하는 경우에는 의뢰인도 이용권을 구매해야 합니다.
+제4조의 예외에 해당하는 경우를 제외하고, 납품물에 본 제품의 프로그램 본체·소스 코드·해제 키·인증 정보를 포함하지 마세요. 다시 편집하기 위해 본 제품이 필요한 경우, 수령자는 공식 배포처에서 별도로 취득해야 합니다.
+
+4. 금지 행위
+법령상 허용되는 이용, 제3자 라이선스에 따른 이용, 제작자의 개별 허락을 제외하고 다음 행위를 금지합니다.
+・본 제품의 전부 또는 일부를 무단 전재·재배포·전매하는 행위.
+・제작자가 권리를 보유한 코드를 복제·전용하여, 개변 여부와 관계없이 다른 도구·에셋 등에 포함해 배포·판매하는 행위. 유료·무료를 불문합니다.
+・해제 키 문자열, 키가 포함된 파일·패키지, 인증 정보를 제3자에게 전달·공개·공유·전매하는 행위.
+・제품판 이용 조건을 우회할 목적으로 판정 기능을 개변·무효화하거나, 그러한 우회를 목적으로 하는 프로그램이나 절차를 공개·배포하는 행위.
+・본 제품을 자신이 처음부터 개발했다고 허위로 주장하는 행위.
+본 제품의 코드를 복제·전용하지 않고 독립적으로 개발한 프로그램이나, 일반적인 지식·아이디어의 이용은 제한하지 않습니다.
+
+5. 원본 소재와 제3자의 권리
+아바타·의상 등 편집 대상에 대해서는 각 권리자의 이용약관을 따라 주세요. 본 약관은 해당 소재의 개변·판매·재배포를 별도로 허용하는 것이 아닙니다.
+제3자 라이선스가 적용되는 코드나 의존 도구에는 각각의 라이선스가 적용됩니다. 본 약관은 해당 라이선스의 허락 범위를 제한하지 않습니다.
+본 제품 중 제작자가 권리를 보유한 부분의 저작권은 제작자에게 귀속됩니다.
+
+6. 업데이트와 활성화
+기능·화면·지원 환경의 변경은 업데이트 내용으로 안내합니다. 향후 기능이나 공개 시기를 약속하는 것은 아닙니다.
+제품판 활성화에 외부 인증 서버를 사용하지 않습니다. 활성화 상태는 PC 안에 저장됩니다. 프로그램의 취득·업데이트나 BOOTH 등의 페이지를 열 때 발생하는 통신은 별개입니다.
+
+7. 반품·환불과 문제 대응
+본 제품은 디지털 형식으로 제공되는 소프트웨어입니다. 구매자 개인 사유로 인한 구매 후 취소·반품·환불은 받지 않습니다. 구매 전에 실행 환경과 무료 체험판을 확인해 주세요.
+모든 환경이나 다른 도구와의 조합에서 작동을 보증하지는 않습니다. 예기치 못한 문제에 대비하여 작업 전에 프로젝트를 백업해 주세요.
+제작자는 적용 법령에 따라 책임을 집니다. 본 조는 제작자의 채무불이행 등을 이유로 법령상 인정되는 계약 해제·환불·손해배상 등의 권리를 제한하지 않습니다.
+문제나 구매 관련 문의는 BOOTH의 숍 메시지로 보내 주세요.
+
+8. 약관의 변경
+약관을 변경하는 경우, 변경 내용·대상 버전·효력 발생일을 배포 페이지 등에서 안내합니다.
+계약 내용의 변경은 필요한 동의와 그 밖의 법령상 요건에 따라 진행합니다.
+
+9. 준거법·문의처
+본 약관은 일본법에 따라 해석됩니다. 분쟁의 관할은 법령에서 정하는 바에 따릅니다.
+문의처: BOOTH의 HoriCraft 숍 메시지
+https://horicraft.booth.pm/items/8693979
+
+작성자: hori / HoriCraft
+시행일: 2026년 11월 8일
+
+
+MeshEraser 使用条款
+条款版本：2026-11-08
+对象：产品 v1.1.0 的正式发行版本。适用范围遵循第1条。
+
+1. 本条款的适用对象
+本条款规定 hori／HoriCraft（以下简称“作者”）所提供的 MeshEraser 的使用条件。软件本体、作者拥有权利的源代码以及随附的工具和资料统称为“本产品”。
+本条款适用于自生效日起依据本条款订立的使用许可合同。适用版本和使用条件将在获取或使用前告知。请阅读并同意本条款后再使用本产品。
+
+2. 使用许可
+正式版的购买价款，是按照本条款规定的条件使用正式版功能的非独占使用许可的对价，并不转让本产品的著作权或其他知识产权。
+每位使用正式版功能的人员均须购买使用权。购买者本人可在自己使用的多台 PC 和多个项目中使用。作者另行给予个别许可时，遵循该许可的条件。
+免费试用版可在所提供的试用功能范围内使用。
+
+3. 成果的使用、销售与交付
+允许使用本产品制作、修改虚拟形象等，承接有偿制作工作，销售或分发成果，进行视频直播等商业或非商业活动。个人和法人均适用。
+成果包括加工后的虚拟形象、网格、图像、动画、场景、Prefab 以及使用者创建的设置数据等，不包括本产品的软件本体、源代码、解锁密钥或认证信息。
+仅接收成果的委托方无需购买使用权。委托方自行使用正式版功能时，也须购买使用权。
+除符合第4条规定的例外情形外，请勿在交付物中包含本产品的软件本体、源代码、解锁密钥或认证信息。如需使用本产品进行再次编辑，接收方须从官方分发渠道另行获取。
+
+4. 禁止行为
+除法律允许的使用、第三方许可证授权的使用以及作者给予个别许可的情形外，禁止以下行为。
+・未经授权转载、再次分发或转售本产品的全部或一部分。
+・复制或挪用作者拥有权利的代码，将其包含在其他工具、资源等中进行分发或销售，无论是否经过修改，也无论收费或免费。
+・向第三方提供、公开、共享或转售解锁密钥字符串、含密钥的文件或软件包、认证信息。
+・以绕过正式版使用条件为目的，修改或停用判定功能，或公开、分发以此类绕过为目的的程序或操作步骤。
+・谎称本产品由自己从零开发。
+本条款不限制未复制或挪用本产品代码而独立开发的程序，也不限制一般知识或想法的使用。
+
+5. 原素材与第三方权利
+对于虚拟形象、服装等编辑对象，请遵守各权利人的使用条款。本条款并不另行授权对这些素材进行修改、销售或再次分发。
+适用第三方许可证的代码和依赖工具，应遵循各自的许可证。本条款不限制这些许可证授予的许可。
+本产品中作者拥有权利的部分，其著作权归作者所有。
+
+6. 更新与激活
+功能、界面和支持环境的变更将作为更新内容告知。这不构成对未来功能或发布时间的承诺。
+正式版激活不使用外部认证服务器，激活状态保存在 PC 内。获取或更新软件本体，以及打开 BOOTH 等页面时的网络通信不在此列。
+
+7. 退货、退款与问题处理
+本产品是以数字形式提供的软件。购买后因购买者自身原因提出的取消购买、退货或退款请求不予受理。请在购买前确认运行环境并体验免费试用版。
+不保证本产品能在所有环境下或与所有其他工具组合使用时正常运行。为防止意外问题，请在开始工作前备份项目。
+作者依法承担责任。本条不限制因作者未履行合同义务等原因而依法享有的解除合同、退款、损害赔偿等权利。
+如有问题或购买相关咨询，请通过 BOOTH 店铺消息联系。
+
+8. 条款变更
+变更本条款时，将在分发页面等处告知变更内容、适用版本和生效日期。
+合同内容的变更将遵循取得必要同意及其他法律要求。
+
+9. 准据法与联系方式
+本条款依日本法律解释。争议的管辖依法律规定确定。
+联系方式：BOOTH 的 HoriCraft 店铺消息
+https://horicraft.booth.pm/items/8693979
+
+制定者：hori／HoriCraft
+生效日期：2026年11月8日
