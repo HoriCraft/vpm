@@ -1,6 +1,6 @@
 ﻿MeshEraser 利用規約
 規約版：2026-11-08
-対象：製品v1.1.0の正式提供分。適用は第1条に従います。
+対象：製品v1.1.0以降の正式提供分。適用は第1条に従います。
 
 1. この規約の対象
 この規約は、hori／HoriCraft（以下「作者」）が提供するMeshEraserの利用条件です。本体、作者が権利を持つソースコード、同梱ツール・資料を「本製品」とします。
@@ -56,7 +56,7 @@ https://horicraft.booth.pm/items/8693979
 
 MeshEraser Terms of Use
 Terms version: 2026-11-08
-Scope: the official release of product v1.1.0. Applicability is governed by Article 1.
+Scope: official releases of product v1.1.0 and later. Applicability is governed by Article 1.
 
 1. Scope of These Terms
 These Terms set out the conditions for using MeshEraser, provided by hori / HoriCraft (the “Author”). The software, source code in which the Author holds rights, and accompanying tools and documentation are collectively referred to as the “Product”.
@@ -112,7 +112,7 @@ Effective date: November 8, 2026
 
 MeshEraser 이용약관
 약관 버전: 2026-11-08
-대상: 제품 v1.1.0의 정식 제공분. 적용 범위는 제1조에 따릅니다.
+대상: 제품 v1.1.0 이후의 정식 제공분. 적용 범위는 제1조에 따릅니다.
 
 1. 본 약관의 대상
 본 약관은 hori / HoriCraft(이하 “제작자”)가 제공하는 MeshEraser의 이용 조건을 정합니다. 프로그램 본체, 제작자가 권리를 보유한 소스 코드, 동봉된 도구와 자료를 통틀어 “본 제품”이라 합니다.
@@ -168,7 +168,7 @@ https://horicraft.booth.pm/items/8693979
 
 MeshEraser 使用条款
 条款版本：2026-11-08
-对象：产品 v1.1.0 的正式发行版本。适用范围遵循第1条。
+对象：产品 v1.1.0 及后续正式发行版本。适用范围遵循第1条。
 
 1. 本条款的适用对象
 本条款规定 hori／HoriCraft（以下简称“作者”）所提供的 MeshEraser 的使用条件。软件本体、作者拥有权利的源代码以及随附的工具和资料统称为“本产品”。

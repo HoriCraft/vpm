@@ -6,11 +6,12 @@ const listing=JSON.parse(fs.readFileSync(path.join(root,'index.json'),'utf8'));
 assert.equal(listing.id,'com.horicraft.mesh-eraser.vpm');
 assert.equal(listing.url,'https://horicraft.github.io/vpm/mesheraser/index.json');
 const versions=listing.packages['com.horicraft.mesh-eraser'].versions;
-assert.deepEqual(Object.keys(versions),['1.1.0']);
-const p=versions['1.1.0'];
-assert.equal(p.version,'1.1.0');assert.equal(p.displayName,'MeshEraser');
+assert.deepEqual(Object.keys(versions),['1.1.1','1.1.0']);
+assert.equal(versions['1.1.0'].zipSHA256,'d15ff2db1600c4d9f01bac34d2948c26462f990fb7e5f5ec23639dea1171b7a2');
+const p=versions['1.1.1'];
+assert.equal(p.version,'1.1.1');assert.equal(p.displayName,'MeshEraser');
 assert.match(p.zipSHA256,/^[a-f0-9]{64}$/);
-assert.equal(p.url,'https://github.com/HoriCraft/vpm/releases/download/mesheraser-v1.1.0/com.horicraft.mesh-eraser-1.1.0.zip');
+assert.equal(p.url,'https://github.com/HoriCraft/vpm/releases/download/mesheraser-v1.1.1/com.horicraft.mesh-eraser-1.1.1.zip');
 assert.equal(Object.keys(p.legacyFiles).length,44);
 assert(!p.legacyFolders);
 for(const filename of ['index.html','terms.html','利用規約.txt']){
