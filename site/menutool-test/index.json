@@ -100,6 +100,25 @@
           "url": "https://github.com/HoriCraft/vpm/releases/download/menutool-v0.4.0-beta.24/com.horicraft.menu-tool-0.4.0-beta.24.zip",
           "zipSHA256": "afa02e438045ecf0bb5a810f2d0039f9163a34537de7d5e4b5317f38959b1ae7",
           "repo": "https://horicraft.github.io/vpm/menutool-test/index.json"
+        },
+        "0.4.0-beta.25": {
+          "name": "com.horicraft.menu-tool",
+          "version": "0.4.0-beta.25",
+          "displayName": "MenuTool",
+          "description": "Non-destructive VRChat avatar menu organization and Modular Avatar menu control creation.",
+          "unity": "2022.3",
+          "license": "LicenseRef-HoriCraft-MenuTool",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.10.4 <3.11.0",
+            "nadena.dev.ndmf": ">=1.14.6 <2.0.0",
+            "nadena.dev.modular-avatar": ">=1.18.3 <2.0.0"
+          },
+          "author": {
+            "name": "HoriCraft"
+          },
+          "url": "https://github.com/HoriCraft/vpm/releases/download/menutool-v0.4.0-beta.25/com.horicraft.menu-tool-0.4.0-beta.25.zip",
+          "zipSHA256": "bbf9c8df691392b8673af3f06616ca37e4f611c2b0aa7dfb9e16716d69288f26",
+          "repo": "https://horicraft.github.io/vpm/menutool-test/index.json"
         }
       }
     }
