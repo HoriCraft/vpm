@@ -125,3 +125,7 @@ Owner approved the five visual-review fixes and the duplicate unregistered-avata
 ## 2026-11-26 beta.29
 
 Tester update for the redesigned UI and PC-wide save slots. Source 4a0018fb841ce9be55683009dd709fee988b7966. 12889340 bytes, SHA256 f4bf7ead5145e5b5e5038d168c2fe62ec5c12cb4031d8bcfc589cfb824dc4af1. The free limit is five manual saved faces across projects. Registration originals, automatic backups and expressions are outside the limit. If an older avatar's original cannot be recognized, its earliest manual save is exempt. A valid expansion key only lifts the slot limit. This version retains the fixed repository URL and all previous catalog entries. Unity acceptance is pending.
+
+## 2026-11-26 beta.30
+
+Aligns the Katachia window and ordinary buttons with the Unity Editor light and dark themes. Refines the save, capture and delete colors and their interaction states. Source 23b0578ee5dda10a9029b005caab79fbb986737c. 12889873 bytes, SHA256 7471a17196478e948257d01e5c91f5e9c8010d4254d25c2c345a4da0f100caa5. All 22 prior versions are retained in the same catalog.
