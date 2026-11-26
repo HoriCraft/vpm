@@ -13,12 +13,12 @@ function loadPersonalKey(){
  if(location.hash.startsWith('#key=')){try{history.replaceState(null,'',cleanAddress(location.href));}catch{/* A local file may not allow history changes. Do not persist the key elsewhere. */}}
  if(result.state==='ready'){
   key=result.key;$('copy-key').disabled=false;
-  $('recipient').textContent=result.expiry?'キーの期限：'+result.expiry:'受け取った製品版キー';
+  $('recipient').textContent=result.expiry?'キーの期限：'+result.expiry:'受け取った拡張キー';
   $('key-hint').textContent='個別リンクからキーを読み取りました。コピーしてUnityで登録してください。再読み込み後はDMの個別リンクから開き直せます。';
  }else if(result.state==='invalid'){
   $('key-hint').textContent='キー付きリンクを読み取れませんでした。DMのリンク全体から開き直すか、@SansanHoriへ再送を依頼してください。';
  }else{
-  $('key-hint').textContent='beta.19からKatachiaは解除キーなしで使えます。キーの登録は不要です。';
+  $('key-hint').textContent='キーは保存枠を無制限にするときに登録します。';
  }
 }
 async function start(){
@@ -29,7 +29,7 @@ async function start(){
   if(!response.ok)throw Error('配布情報を読み込めませんでした。少し待って開き直してください。');
   validateListing(await response.json(),config);repositoryReady=true;
   for(const id of ['add-repo','copy-repo'])$(id).disabled=false;
-  $('connection').textContent='リポジトリはどなたでも追加できます。beta.19から解除キーは不要です。';
+  $('connection').textContent='配布情報を確認できました。ALCOMで追加・更新できます。';
  }catch(e){$('connection').textContent=e.message;$('connection').classList.add('error');}
 }
 start();

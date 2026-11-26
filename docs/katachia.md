@@ -121,3 +121,7 @@ Owner approved publishing beta.27 for visual checks through ALCOM. Source f0095d
 ## 2026-10-24 beta.28
 
 Owner approved the five visual-review fixes and the duplicate unregistered-avatar guidance, and publication through ALCOM. Source 9810d99ca28830fbbe03a0722fb4e5c1d9fcf364. 12871673 bytes, SHA256 41440e0b2d82c73eb6a51f524bd78d9832dd7a0f1a5f73c82b76d059f603c192. Hides the product-key card when keys are not required, reduces normal NDMF status to one line, moves diagnostic explanations into diagnostics, shortens timestamp/texture-copy labels, removes the duplicate expression-history title and empty-count explanation, and keeps registration errors visible without repeating selection instructions. Existing saved data, settings and key registration are preserved. Four compile configurations, 46 regression suites and 977 translation keys checked. Actual beta.28 appearance remains unverified in Unity. Previous releases remain unchanged.
+
+## 2026-11-26 beta.29
+
+Tester update for the redesigned UI and PC-wide save slots. Source 4a0018fb841ce9be55683009dd709fee988b7966. 12889340 bytes, SHA256 f4bf7ead5145e5b5e5038d168c2fe62ec5c12cb4031d8bcfc589cfb824dc4af1. The free limit is five manual saved faces across projects. Registration originals, automatic backups and expressions are outside the limit. If an older avatar's original cannot be recognized, its earliest manual save is exempt. A valid expansion key only lifts the slot limit. This version retains the fixed repository URL and all previous catalog entries. Unity acceptance is pending.
