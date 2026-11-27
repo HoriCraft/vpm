@@ -137,3 +137,7 @@ Places History in the top-right header and refines readability in both Unity the
 ## 2026-11-27 beta.32
 
 Removes unused full NDMF build helpers after switching capture and saved-face photos to live preview rendering. Source 6bc7f2236912c34eb75a618e5b58968c9d23f44f. 12877353 bytes, SHA256 b4acebb30a175f396114bb1e9855988890de12f9befee36ca95bec5530aec264. All 24 prior versions remain in the same catalog.
+
+## 2026-11-27 beta.33
+
+Adds the HoriCraft BOOTH link to the prefilled X post from capture results. Source b571690d92148f10e9dbf39731676e40edf12f9c. 12877421 bytes, SHA256 6545510bc8998b27191e9ff916b1943e29978ed29b16c85c25ed14529957274b. All 25 prior versions remain in the same catalog.
