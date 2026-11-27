@@ -141,3 +141,7 @@ Removes unused full NDMF build helpers after switching capture and saved-face ph
 ## 2026-11-27 beta.33
 
 Adds the HoriCraft BOOTH link to the prefilled X post from capture results. Source b571690d92148f10e9dbf39731676e40edf12f9c. 12877421 bytes, SHA256 6545510bc8998b27191e9ff916b1943e29978ed29b16c85c25ed14529957274b. All 25 prior versions remain in the same catalog.
+
+## 2026-11-28 beta.34
+
+Adds all-scene save slot management in History and shared comparison controls for live comparison and photography. Source d6a3d22d805f7df8e556ef3ddb422c56dd70ca0b. 12881895 bytes, SHA256 804f73d69c9126526387b31df22f164e55b192e60bca4295794eba86ea59e650. All 26 prior versions remain in the same catalog.
