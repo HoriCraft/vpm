@@ -129,3 +129,7 @@ Tester update for the redesigned UI and PC-wide save slots. Source 4a0018fb841ce
 ## 2026-11-26 beta.30
 
 Aligns the Katachia window and ordinary buttons with the Unity Editor light and dark themes. Refines the save, capture and delete colors and their interaction states. Source 23b0578ee5dda10a9029b005caab79fbb986737c. 12889873 bytes, SHA256 7471a17196478e948257d01e5c91f5e9c8010d4254d25c2c345a4da0f100caa5. All 22 prior versions are retained in the same catalog.
+
+## 2026-11-27 beta.31
+
+Places History in the top-right header and refines readability in both Unity themes. Capture and saved-face photos use the live preview rendering path. Source 1ce7af7f35b5167da464154c8feea12a9d927709. 12880219 bytes, SHA256 d5b81dcf3f75a8f5b1c17b633da239d60f3b49ebc13ed806b81b0f74231d440f. All 23 prior versions remain in the same catalog.

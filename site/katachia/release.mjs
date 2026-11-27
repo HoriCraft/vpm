@@ -1,8 +1,8 @@
 export const config={
-  "version": "0.2.0-beta.30",
+  "version": "0.2.0-beta.31",
   "guideUrl": "https://horicraft.github.io/vpm/katachia/",
   "repositoryUrl": "https://horicraft.github.io/vpm/katachia/index.json",
-  "downloadUrl": "https://github.com/HoriCraft/vpm/releases/download/katachia-v0.2.0-beta.30/com.horicraft.katachia-0.2.0-beta.30.zip",
-  "bytes": 12889873,
-  "sha256": "7471a17196478e948257d01e5c91f5e9c8010d4254d25c2c345a4da0f100caa5"
+  "downloadUrl": "https://github.com/HoriCraft/vpm/releases/download/katachia-v0.2.0-beta.31/com.horicraft.katachia-0.2.0-beta.31.zip",
+  "bytes": 12880219,
+  "sha256": "d5b81dcf3f75a8f5b1c17b633da239d60f3b49ebc13ed806b81b0f74231d440f"
 };
